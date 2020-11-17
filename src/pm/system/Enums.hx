@@ -1,5 +1,10 @@
 package pm.system;
 
+/**
+ *   Enum for the different command moves kind.
+ *   @enum {number}
+ *   @readonly
+ */
 enum abstract CommandMoveKind(Int) from Int to Int {
   public var MoveNorth = 0;
   public var MoveSouth = 1;
@@ -17,6 +22,11 @@ enum abstract CommandMoveKind(Int) from Int to Int {
   public var ChangeGraphics = 13;
 }
 
+/**
+ *   Enum for the different event commands kind.
+ *   @enum {number}
+ *   @readonly
+ */
 enum abstract EventCommandKind(Int) from Int to Int {
   public var None = 0;
   public var ShowText = 1;
@@ -77,19 +87,69 @@ enum abstract EventCommandKind(Int) from Int to Int {
   public var FlashScreen = 56;
 }
 
+/**
+ *   Enum for the different items kind.
+ *   @enum {number}
+ *   @readonly
+ */
 enum abstract ItemKind(Int) from Int to Int {
   public var Item = 0;
   public var Weapon = 1;
   public var Armor = 2;
 }
 
+/**
+ *   Enum for the different players kind.
+ *   @enum {number}
+ *   @readonly
+ */
 enum abstract CharacterKind(Int) from Int to Int {
   public var Hero = 0;
   public var Monster = 1;
 }
 
+/**
+ *   Enum for the different groups kind.
+ *   @enum {number}
+ *   @readonly
+ */
 enum abstract GroupKind(Int) from Int to Int {
   public var Team = 0;
   public var Reserve = 1;
   public var Hidden = 2;
+}
+
+/**
+ *   Enum for the different horizontal aligns kind.
+ *   @enum {string}
+ *   @readonly
+ */
+enum abstract Align(String) from String to String {
+  public var Left = 'left';
+  public var Right = 'right';
+  public var Center = 'center';
+}
+
+/**
+ *   Enum for the different vertical aligns kind.
+ *   @enum {string}
+ *   @readonly
+ */
+enum abstract AlignVertical(Int) from Int to Int {
+  public var Bot = 0;
+  public var Top = 1;
+  public var Center = 2;
+}
+
+/**
+ *   Enum for the different orientations kind.
+ *   @enum {string}
+ *   @readonly
+ */
+enum abstract Orientation(Int) from Int to Int {
+  public var South = 0;
+  public var West = 1;
+  public var North = 2;
+  public var East = 3;
+  public var None = 4;
 }
