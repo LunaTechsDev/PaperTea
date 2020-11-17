@@ -75,4 +75,21 @@ enum abstract EventCommandKind(Int) from Int to Int {
   public var DisplayAnAnimation = 54;
   public var ShakeScreen = 55;
   public var FlashScreen = 56;
-};
+}
+
+enum abstract ItemKind(Int) from Int to Int {
+  public var Item = 0;
+  public var Weapon = 1;
+  public var Armor = 2;
+}
+
+enum abstract CharacterKind(Int) from Int to Int {
+  public var Hero = 0;
+  public var Monster = 1;
+}
+
+enum abstract GroupKind(Int) from Int to Int {
+  public var Team = 0;
+  public var Reserve = 1;
+  public var Hidden = 2;
+}
