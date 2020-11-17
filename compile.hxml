@@ -1,0 +1,10 @@
+-lib hxnodejs
+-cp src
+
+-D js-es=6
+
+-D analyzer-optimize
+
+-dce full
+
+
