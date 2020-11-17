@@ -153,3 +153,23 @@ enum abstract Orientation(Int) from Int to Int {
   public var East = 3;
   public var None = 4;
 }
+
+/**
+ *   Enum for the different map elements kind.
+ *   @enum {number}
+ *   @readonly
+ */
+enum abstract ElementMapKind(Int) from Int to Int {
+  public var None = 0;
+  public var Floors = 1;
+  public var Autotiles = 2;
+  public var Water = 3;
+  public var SpritesFace = 4;
+  public var SpritesFix = 5;
+  public var SpritesDouble = 6;
+  public var SpritesQuadra = 7;
+  public var SpritesWall = 8;
+  public var Object = 9;
+  public var Object3D = 10;
+  public var Mountains = 11;
+}
