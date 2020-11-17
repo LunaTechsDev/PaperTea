@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gendoc": "haxe -xml doc.xml -D doc-gen gen-doc.hxml",
-    "createdoc": "haxelib run dox -i libdocs/ --title \"PaperTea\" --include-private -o docs/ -D source-path https://github.com/LunaTechsDev/PaperTea/tree/master/src"
+    "createdoc": "haxelib run dox -i libdocs/ --title \"PaperTea\" --include-private -o docs/ -D source-path https://github.com/LunaTechsDev/PaperTea/tree/master/src",
+    "integritycheck": "haxe integrity-check.hxml"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,3 @@
+# @install: lix --silent download "gh://github.com/yar3333/haxe-threejs#80bb9771e7a7cf7fd78d59d6ac5ebc1139161b10" into haxe-threejs/0.0.0/github/80bb9771e7a7cf7fd78d59d6ac5ebc1139161b10
+-cp ${HAXE_LIBCACHE}/haxe-threejs/0.0.0/github/80bb9771e7a7cf7fd78d59d6ac5ebc1139161b10/
+-D haxe-threejs=0.0.0
