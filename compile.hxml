@@ -1,4 +1,6 @@
 -lib hxnodejs
+-lib howlerjs
+
 -cp src
 
 -D js-es=6
@@ -8,3 +10,8 @@
 -dce full
 
 
+--each
+
+--next
+--no-output
+-js dummy.js
