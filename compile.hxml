@@ -1,10 +1,13 @@
 -lib hxnodejs
 -lib howlerjs
 
+# Code Directory
 -cp src
 
+# JS Version
 -D js-es=6
 
+# Static Code Analysis For Removing  Unnecessary Code
 -D analyzer-optimize
 
 -dce full
@@ -13,5 +16,6 @@
 --each
 
 --next
+
 --no-output
 -js dummy.js
