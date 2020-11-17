@@ -45,7 +45,7 @@ extern class Bitmap {
 
   /** Set the position to the left
    */
-  public function setLeft(): Void;
+  public function setLeft(offset: Float): Void;
 
   /** Set the position to the top
    */
