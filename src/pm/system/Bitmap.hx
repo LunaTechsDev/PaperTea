@@ -13,6 +13,12 @@ package pm.system;
  *   @param {number} [h=0] h coord of the bitmap
  */
 extern class Bitmap {
+  public var x: Float;
+  public var y: Float;
+  @:native('w')
+  public var width: Float;
+  @:native('h')
+  public var height: Float;
   public function new(x: Float = 0, y: Float = 0, width: Float = 0, height: Float = 0);
 
   /** Set the x value
