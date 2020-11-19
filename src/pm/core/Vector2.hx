@@ -4,7 +4,7 @@ package pm.core;
  * @property {Float} x
  * @property {Float} y
  */
-extern class Vector2 {
+extern class Vector2 { // Extends Three.Vector2
   public var x: Float;
   public var y: Float;
 
