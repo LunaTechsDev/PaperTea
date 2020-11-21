@@ -33,7 +33,7 @@ extern class Picture2D extends Bitmap {
   public var path: String;
   public var loaded: Bool;
   public var empty: Bool;
-  public var image: Any; // What will this be?
+  public var image: Image; // What will this be?
   public var centered: Bool;
   public var reverse: Bool;
 
