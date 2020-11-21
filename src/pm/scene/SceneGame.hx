@@ -7,7 +7,7 @@ extern class SceneGame {
   public var loading: Bool;
   public var reactionInterpreters: Array<ReactionInterpreter>;
   public var parallelCommands: Array<EventCommand>;
-  public function new(): Void;
+  public function new(loading: Bool = true): Void;
 
   /**
    * Loads asynchronously scene data.
