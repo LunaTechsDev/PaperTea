@@ -1,5 +1,6 @@
 package pm.core;
 
+import js.three.Geometry;
 import pm.core.Enums.ElementMapKind;
 import pm.core.Types.SpriteJSON;
 import js.three.Vector3;
@@ -37,4 +38,41 @@ extern class Sprite extends MapElement {
    */
   public static function rotateSprite(vecA: Vector3, vecB: Vector3, vecC: Vector3, vecD: Vector3, center: Vector3,
     angle: Float, axis: Vector3): Void;
+
+  /** Add a static sprite to the geometry
+   *   @static
+   *   @param {THREE.Geometry} geometry The geometry
+   *   @param {THREE.Vector3} vecA The A vertex
+   *   @param {THREE.Vector3} vecB The B vertex
+   *   @param {THREE.Vector3} vecC The C vertex
+   *   @param {THREE.Vector3} vecD The D vertex
+   *   @param {THREE.Vector2} texFaceA The texture face A
+   *   @param {THREE.Vector2} texFaceB The texture face B
+   *   @param {number} count The faces count
+   *   @returns {number}
+   */
+  public static function addStaticSpriteToGeometry(geometry: Geometry, vecA: Vector3, vecB: Vector3, vecC: Vector3,
+    vecD: Vector3, texFaceA: js.three.Vector2, texFaceB: js.three.Vector2, count: Int): Float;
+
+  /** Update the geometry associated to this
+   *   @param {THREE.Geometry} geometry The geometry
+   *   @param {number} width The total texture width
+   *   @param {number} height The total texture height
+   *   @param {number[]} position The json position
+   *   @param {number} count The faces count
+   *   @param {boolean} tileset Indicate if the texture is tileset
+   *   @param {THREE.Vector3} localPosition The local position
+   *   @returns {any[]}
+   */
+  public function updateGeometry(geometry: Geometry, width: Float, height: Float, position: Array<Float>, count: Int,
+    tileset: Bool, localPosition: Vector3): Array<Any>;
+
+  /** Create the geometry associated to this sprite
+   *   @param {number} width The texture total width
+   *   @param {number} height The texture total height
+   *   @param {boolean} tileset Indicate if the texture is tileset
+   *   @param {number[]} position The json position
+   *   @returns {any[]}
+   */
+  public function createGeometry(width: Float, height: Float, tileset: Bool, position: Array<Float>): Array<Any>;
 }
