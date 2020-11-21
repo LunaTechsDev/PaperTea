@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.ElementMapKind;
 import pm.core.Enums.SpriteWallKind;
 
 typedef MapElementJSON = {
@@ -31,4 +32,23 @@ typedef SpriteWallJSON = {
    * Kind
    */
   public var k: SpriteWallKind;
+}
+
+typedef SpriteJSON = {
+  > MapElementJSON,
+
+  /**
+   * Front
+   */
+  public var f: Bool;
+
+  /**
+   * Sprite Kind
+   */
+  public var k: ElementMapKind;
+
+  /**
+   * Texture Rectangle
+   */
+  public var textureRect: Array<Float>;
 }
