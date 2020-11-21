@@ -1,7 +1,5 @@
 package pm.core;
 
-import pm.system.Bitmap;
-
 /** @class
  *   A class for pictures drawable in HUD
  *   @extends Bitmap

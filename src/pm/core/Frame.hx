@@ -1,4 +1,4 @@
-package pm.system;
+package pm.core;
 
 /** @class
  *   A frame for updating animations (characters, battlers, etc.)

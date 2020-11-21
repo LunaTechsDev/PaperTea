@@ -1,5 +1,6 @@
 -lib hxnodejs
 -lib howlerjs
+-lib threejs
 
 # Code Directory
 -cp src

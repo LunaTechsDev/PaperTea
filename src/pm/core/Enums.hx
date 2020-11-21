@@ -1,4 +1,4 @@
-package pm.system;
+package pm.core;
 
 /**
  *   Enum for the different command moves kind.

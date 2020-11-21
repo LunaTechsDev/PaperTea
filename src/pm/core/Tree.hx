@@ -1,4 +1,4 @@
-package pm.system;
+package pm.core;
 
 /** @class
  *   Datas structure of tree

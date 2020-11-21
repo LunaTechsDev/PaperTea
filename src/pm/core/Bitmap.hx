@@ -1,4 +1,4 @@
-package pm.system;
+package pm.core;
 
 /** @class
  *   A bitmap is something that can be drawn on the HUD. It can be a window,
