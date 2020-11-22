@@ -1,0 +1,3 @@
+# @install: lix --silent download "haxelib:/howlerjs#2.0.4" into howlerjs/2.0.4/haxelib
+-cp ${HAXE_LIBCACHE}/howlerjs/2.0.4/haxelib/src
+-D howlerjs=2.0.4

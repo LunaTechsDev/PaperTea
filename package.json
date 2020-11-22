@@ -1,0 +1,30 @@
+{
+  "name": "papertea",
+  "version": "1.0.0",
+  "description": "RPG Paper Maker framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gendoc": "haxe -xml doc.xml -D doc-gen gen-doc.hxml",
+    "createdoc": "haxelib run dox -i libdocs/ --title \"PaperTea\" --include-private -o docs/ -D source-path https://github.com/LunaTechsDev/PaperTea/tree/master/src",
+    "integritycheck": "haxe integrity-check.hxml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaTechsDev/PaperTea.git"
+  },
+  "keywords": [
+    "PaperTea",
+    "PaperMaker",
+    "RPGMaker"
+  ],
+  "author": "Kino Rose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LunaTechsDev/PaperTea/issues"
+  },
+  "homepage": "https://github.com/LunaTechsDev/PaperTea#readme",
+  "dependencies": {
+    "lix": "^15.9.0"
+  }
+}
