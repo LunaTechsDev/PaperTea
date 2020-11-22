@@ -1,0 +1,13 @@
+-lib hxnodejs
+
+-cp src
+
+--macro include("core")
+--macro include("macros")
+--macro include("utils")
+--no-output
+
+--each
+
+--next
+-js dummy.js
