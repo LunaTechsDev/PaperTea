@@ -50,5 +50,50 @@ typedef SpriteJSON = {
   /**
    * Texture Rectangle
    */
-  public var textureRect: Array<Float>;
+  public var t: Array<Float>;
+}
+
+typedef LandJSON = {
+  > MapElementJSON,
+
+  /**
+   * Up Or Not
+   */
+  public var up: Bool;
+
+  /**
+   * Texture Rectangle
+   */
+  public var t: Array<Float>;
+}
+
+typedef FloorJSON = {
+  > LandJSON,
+}
+
+typedef CollisionSquareJSON = {
+  /**
+   * Rectangle
+   */
+  public var rec: Array<Float>;
+
+  /**
+   * Left
+   */
+  public var l: Bool;
+
+  /**
+   * Right
+   */
+  public var r: Bool;
+
+  /**
+   * Top
+   */
+  public var top: Bool;
+
+  /**
+   * Bottom
+   */
+  public var bot: Bool;
 }
