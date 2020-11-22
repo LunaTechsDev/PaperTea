@@ -9,8 +9,8 @@ Officially supported by RPG Paper Maker.
 
 **Note this is still under active development.**
 
-
-
+### Authors & Contributors
+* Kino Rose
 
 
 ## Why Haxe ?
