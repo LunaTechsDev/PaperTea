@@ -71,6 +71,20 @@ typedef FloorJSON = {
   > LandJSON,
 }
 
+typedef AutotileJSON = {
+  > LandJSON,
+
+  /**
+   * AutoTile ID
+   */
+  public var id: Int;
+
+  /**
+   * Tile ID
+   */
+  public var tid: Int;
+}
+
 typedef CollisionSquareJSON = {
   /**
    * Rectangle

@@ -11,7 +11,7 @@ class BuildMacros {
     var sourceCode = fileContent;
 
     var shaderField: Field = {
-      name: "fragSrc",
+      name: 'fragSrc',
       access: [APublic, AInline, AStatic],
       kind: FVar(macro : String, macro $v{sourceCode}),
       pos: Context.currentPos()
@@ -26,7 +26,7 @@ class BuildMacros {
     var sourceCode = fileContent;
 
     var shaderField: Field = {
-      name: "vertexSrc",
+      name: 'vertexSrc',
       access: [APublic, AInline, AStatic],
       kind: FVar(macro : String, macro $v{sourceCode}),
       pos: Context.currentPos()
