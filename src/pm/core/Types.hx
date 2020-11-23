@@ -167,3 +167,25 @@ typedef CostJSON = {
    */
   public var vf: String;
 }
+
+typedef ColorJSON = {
+  /**
+   * Red
+   */
+  public var r: Float;
+
+  /**
+   * Green
+   */
+  public var g: Float;
+
+  /**
+   * Blue
+   */
+  public var b: Float;
+
+  /**
+   * Alpha
+   */
+  public var a: Float;
+}

@@ -28,7 +28,7 @@ extern class BaseSystem {
 
   /**
    * Read the json data
-   * @param {Record<string, any>} json
+   * @param {DynamicAccess<Dynamic>} Json
    */
   // abstract
   public function read(?json: DynamicAccess<Dynamic>): Void;
