@@ -2,7 +2,6 @@ package pm.system;
 
 import pm.core.Enums.DamagesKind;
 import pm.core.Types.CostJSON;
-import js.node.Constants;
 
 /** @class
  *   A cost of a common skill item
