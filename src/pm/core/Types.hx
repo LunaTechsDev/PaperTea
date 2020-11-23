@@ -1,7 +1,12 @@
 package pm.core;
 
+import pm.system.DynamicValue;
+import haxe.extern.EitherType;
+import haxe.DynamicAccess;
 import pm.core.Enums.ElementMapKind;
 import pm.core.Enums.SpriteWallKind;
+
+typedef NumOrDynamic = EitherType<Float, DynamicValue>;
 
 typedef MapElementJSON = {
   /**
@@ -110,4 +115,27 @@ typedef CollisionSquareJSON = {
    * Bottom
    */
   public var bot: Bool;
+}
+
+typedef ProgressionJSON = {
+  /**
+   * Initial Value
+   */
+  public var i: Float;
+
+  /**
+   * Final Value
+   */
+  public var f: Float;
+
+  /**
+   * Equation/Equation Kind
+   */
+  public var e: Int; // Equation Kind
+
+  /**
+   * Table
+   */
+  public var t: DynamicAccess<Dynamic>; // <String, Any>
+
 }
