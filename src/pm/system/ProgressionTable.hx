@@ -23,11 +23,11 @@ extern class ProgressionTable extends BaseSystem {
   public var finalValue: DynamicValue;
   public var equation: Int; // EquationKind
   public var table: DynamicAccess<Dynamic>; // <String, Any>
-  public var start: Int;
+  public var start: Float;
   public var change: Float;
   public var duration: Float;
 
-  public function new(id: Int = null, json: ProgressionJSON = null): Void;
+  public function new(?id: Int, ?json: ProgressionJSON): Void;
 
   /** Create a new system progression table
    *   @param {DynamicValue | Float} i The initial value

@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.DamagesKind;
 import pm.system.DynamicValue;
 import haxe.extern.EitherType;
 import haxe.DynamicAccess;
@@ -138,4 +139,31 @@ typedef ProgressionJSON = {
    */
   public var t: DynamicAccess<Dynamic>; // <String, Any>
 
+}
+
+typedef CostJSON = {
+  /**
+   * Damage Kind
+   */
+  public var k: DamagesKind;
+
+  /**
+   * Statistics ID
+   */
+  public var sid: Int;
+
+  /**
+   * CurrencyID
+   */
+  public var cid: Int;
+
+  /**
+   * Variable ID
+   */
+  public var vid: Int;
+
+  /**
+   * Value Formula
+   */
+  public var vf: String;
 }
