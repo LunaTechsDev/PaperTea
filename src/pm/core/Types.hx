@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.AnimationPositionKind;
 import pm.core.Enums.DamagesKind;
 import pm.system.DynamicValue;
 import haxe.extern.EitherType;
@@ -201,4 +202,31 @@ typedef IconJSON = {
    * Picture ID
    */
   public var pid: Int;
+}
+
+typedef AnimationJSON = {
+  /**
+   * Picture ID
+   */
+  public var pid: Int;
+
+  /**
+   * Position Kind
+   */
+  public var pk: AnimationPositionKind;
+
+  /**
+   * Frames
+   */
+  public var f: Int;
+
+  /**
+   * Rows
+   */
+  public var r: Int;
+
+  /**
+   * Columns
+   */
+  public var c: Int;
 }
