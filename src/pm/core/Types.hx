@@ -230,3 +230,15 @@ typedef AnimationJSON = {
    */
   public var c: Int;
 }
+
+typedef AnimationFrameJSON = {
+  /**
+   * Animation Elements JSON
+   */
+  public var e: Dynamic;
+
+  /**
+   * Animation Effects JSON
+   */
+  public var ef: Dynamic;
+}
