@@ -189,3 +189,16 @@ typedef ColorJSON = {
    */
   public var a: Float;
 }
+
+typedef LangJSON = {
+  public var names: Array<String>;
+}
+
+typedef IconJSON = {
+  > LangJSON,
+
+  /**
+   * Picture ID
+   */
+  public var pid: Int;
+}

@@ -4,6 +4,9 @@ import js.three.Vector4;
 import pm.core.Types.ColorJSON;
 import js.three.Vector3;
 
+/**
+ * Color Class
+ */
 @:native('Color')
 extern class Color extends BaseSystem {
   public var red: Float;
