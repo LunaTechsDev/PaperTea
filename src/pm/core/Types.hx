@@ -242,3 +242,45 @@ typedef AnimationFrameJSON = {
    */
   public var ef: Dynamic;
 }
+
+typedef AnimationFEJSON = {
+  /**
+   * X Position
+   */
+  public var x: Float;
+
+  /**
+   * Y Position
+   */
+  public var y: Float;
+
+  /**
+   * Texture Row
+   */
+  public var tr: Int;
+
+  /**
+   * Texture Column
+   */
+  public var tc: Int;
+
+  /**
+   * Zoom
+   */
+  public var z: Float;
+
+  /**
+   * Angle
+   */
+  public var a: Float;
+
+  /**
+   * Flip Value
+   */
+  public var fv: Bool;
+
+  /**
+   * Opacity
+   */
+  public var o: Float;
+}
