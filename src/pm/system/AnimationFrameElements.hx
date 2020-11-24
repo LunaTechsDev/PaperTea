@@ -5,7 +5,7 @@ import js.three.Vector2;
 import pm.core.Picture2D;
 
 /** @class
- *   An animation frame element
+ * An animation frame element
  */
 extern class AnimationFrameElements extends BaseSystem {
   /**

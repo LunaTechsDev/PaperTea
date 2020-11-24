@@ -284,3 +284,36 @@ typedef AnimationFEJSON = {
    */
   public var o: Float;
 }
+
+typedef StaticProgressionJSON = {
+  /**
+   * Id
+   */
+  public var id: Int;
+
+  /**
+   * Maximum Value
+   */
+  public var m: Float;
+
+  /**
+   * Is Fixed
+   */
+  @:native('if')
+  public var isFix: Bool;
+
+  /**
+   * Progression Table JSON
+   */
+  public var t: Dynamic;
+
+  /**
+   * Random
+   */
+  public var r: Float;
+
+  /**
+   * Formula
+   */
+  public var f: Float;
+}
