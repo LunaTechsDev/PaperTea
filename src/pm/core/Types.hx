@@ -317,3 +317,30 @@ typedef StaticProgressionJSON = {
    */
   public var f: Float;
 }
+
+typedef ClassJSON = {
+  /**
+   * Initial Level
+   */
+  public var iniL: Int;
+
+  /**
+   * Final Level / Max Level
+   */
+  public var mxL: Int;
+
+  /**
+   * Experience Base
+   */
+  public var eB: Int;
+
+  /**
+   * Experience Inflation
+   */
+  public var eI: Int;
+
+  /**
+   * Experience Table
+   */
+  public var eT: Dynamic;
+}

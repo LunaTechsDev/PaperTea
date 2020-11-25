@@ -7,11 +7,34 @@ import pm.core.Types.StaticProgressionJSON;
  * Statistic Progression within the game.
  */
 extern class StatisticProgression extends BaseSystem {
+  /**
+   * Static Progression ID
+   */
   public var id: Int;
+
+  /**
+   * Max Value
+   */
   public var maxValue: DynamicValue;
+
+  /**
+   * Indicate if Static Progression is Fixed
+   */
   public var isFix: Bool;
+
+  /**
+   * Static Progression Table
+   */
   public var table: ProgressionTable;
+
+  /**
+   * Random Value
+   */
   public var random: DynamicValue;
+
+  /**
+   * The static progression formula
+   */
   public var formula: DynamicValue;
 
   public function new(json: StaticProgressionJSON): Void;
