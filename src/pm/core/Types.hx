@@ -319,6 +319,8 @@ typedef StaticProgressionJSON = {
 }
 
 typedef ClassJSON = {
+  > LangJSON,
+
   /**
    * Initial Level
    */
@@ -356,3 +358,6 @@ typedef ClassSkillJSON = {
    */
   public var l: Int;
 }
+
+// TODO: Fill out with relevant tags if any
+typedef ArmorJSON = {}
