@@ -344,3 +344,15 @@ typedef ClassJSON = {
    */
   public var eT: Dynamic;
 }
+
+typedef ClassSkillJSON = {
+  /**
+   * Skill ID
+   */
+  public var id: Int;
+
+  /**
+   * Level
+   */
+  public var l: Int;
+}

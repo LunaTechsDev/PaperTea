@@ -1,5 +1,6 @@
 package pm.system;
 
+import haxe.DynamicAccess;
 import pm.core.Types.ClassJSON;
 
 /**
@@ -21,6 +22,38 @@ extern class Class extends Lang {
    * Experience Inflation Property = experienceInflation
    */
   public static var PROPERTY_EXPERIENCE_INFLATION: String;
+
+  /**
+   * Initial Class Level
+   */
+  public var initialLevel: Int;
+
+  /**
+   * Final Class Level
+   */
+  public var finalLevel: Int;
+
+  /**
+   * The base experience for the class level.
+   */
+  public var experienceBase: Float;
+
+  /**
+   * The experience inflation for the class.
+   */
+  public var experienceInflation: Float;
+
+  /**
+   * THe experience table for the class.
+   */
+  public var experienceTable: DynamicAccess<Dynamic>;
+
+  /**
+   * The statistic progression for the class.
+   */
+  public var statisticsProgression: StatisticProgression;
+
+  public var skills: Array<ClassSkill>;
 
   public function new(?json: ClassJSON): Void;
 
