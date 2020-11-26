@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.AnimationEffectConditionKind;
 import pm.core.Enums.IncreaseDecreaseKind;
 import pm.core.Enums.AnimationPositionKind;
 import pm.core.Enums.DamagesKind;
@@ -519,4 +520,16 @@ typedef BattleMapJSON = {
    * Position
    */
   public var p: Array<Float>;
+}
+
+typedef AnimationFrameEffectJSON = {
+  /**
+   * Is Sound Effect
+   */
+  public var ise: Bool;
+
+  /**
+   * Animation Effect Condition Kind
+   */
+  public var c: AnimationEffectConditionKind;
 }
