@@ -508,3 +508,15 @@ typedef PlaySongJSON = {
    */
   public var e: Float;
 }
+
+typedef BattleMapJSON = {
+  /**
+   * Map ID
+   */
+  public var idm: Int;
+
+  /**
+   * Position
+   */
+  public var p: Array<Float>;
+}
