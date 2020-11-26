@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.IncreaseDecreaseKind;
 import pm.core.Enums.AnimationPositionKind;
 import pm.core.Enums.DamagesKind;
 import pm.system.DynamicValue;
@@ -361,3 +362,115 @@ typedef ClassSkillJSON = {
 
 // TODO: Fill out with relevant tags if any
 typedef ArmorJSON = {}
+
+typedef CharacteristicJSON = {
+  /**
+   * Increase or Decrease
+   */
+  public var iid: Bool;
+
+  /**
+   * Increase or decrease kind integer
+   */
+  public var idk: IncreaseDecreaseKind;
+
+  /**
+   * Statistic Value ID
+   */
+  public var svid: Int;
+
+  /**
+   * Element Resistance ID
+   */
+  public var erid: Int;
+
+  /**
+   * Status Resistance ID
+   */
+  public var strid: Int;
+
+  /**
+   * Currency Gain ID
+   */
+  public var cgid: Int;
+
+  /**
+   * Skill Cost ID
+   */
+  public var scid: Int;
+
+  /**
+   * Is All Skill Cost
+   */
+  public var iasc: Bool;
+
+  /**
+   * Variable ID
+   */
+  public var vid: Int;
+
+  /**
+   * Operation
+   */
+  public var o: Bool;
+
+  /**
+   * Value
+   */
+  public var v: Float;
+
+  /**
+   * Unit
+   */
+  public var unit: Bool;
+
+  /**
+   * Script
+   */
+  public var s: String;
+
+  /**
+   * Is Allow Equip
+   */
+  public var iae: Bool;
+
+  /**
+   * Is allow equip weapon
+   */
+  public var iaw: Bool;
+
+  /**
+   * Equip weapon type ID
+   */
+  public var ewtid: Int;
+
+  /**
+   * Equip armor type ID
+   */
+  public var eatid: Int;
+
+  /**
+   * Is allow change equipment
+   */
+  public var iace: Bool;
+
+  /**
+   * Change Equipment ID
+   */
+  public var ceid: Int;
+
+  /**
+   * Begin equipment ID
+   */
+  public var beid: Int;
+
+  /**
+   * Is begin weapon
+   */
+  public var ibw: Bool;
+
+  /**
+   * Begin Weapon armor ID
+   */
+  public var bwaid: Int;
+}
