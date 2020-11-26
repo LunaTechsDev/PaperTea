@@ -533,3 +533,62 @@ typedef AnimationFrameEffectJSON = {
    */
   public var c: AnimationEffectConditionKind;
 }
+
+typedef CameraPropertiesJSON = {
+  /**
+   * Distance
+   */
+  public var d: Float;
+
+  /**
+   * Horizontal Angle
+   */
+  public var ha: Float;
+
+  /**
+   * Vertical Angle
+   */
+  public var va: Float;
+
+  /**
+   * Target Offset X
+   */
+  public var tox: Float;
+
+  /**
+   * Target Offset Y
+   */
+  public var toy: Float;
+
+  public var toz: Float;
+
+  /**
+   * Is Square Target Offset X
+   */
+  public var istox: Bool;
+
+  /**
+   * Is Square Target Offset Y
+   */
+  public var istoy: Bool;
+
+  /**
+   * Is Square Target Offset Z
+   */
+  public var istoz: Bool;
+
+  /**
+   * Field of view
+   */
+  public var fov: Float;
+
+  /**
+   * Near the near
+   */
+  public var n: Float;
+
+  /**
+   * Far the far
+   */
+  public var f: Float;
+}
