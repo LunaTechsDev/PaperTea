@@ -474,3 +474,37 @@ typedef CharacteristicJSON = {
    */
   public var bwaid: Int;
 }
+
+typedef PlaySongJSON = {
+  public var isbi: Bool;
+
+  /**
+   * Variable ID
+   */
+  public var vid: Int;
+
+  /**
+   * ID
+   */
+  public var id: Int;
+
+  /**
+   * Is Start
+   */
+  public var is: Bool;
+
+  /**
+   * Start
+   */
+  public var s: Float;
+
+  /**
+   * Is End
+   */
+  public var ie: Bool;
+
+  /**
+   * End
+   */
+  public var e: Float;
+}
