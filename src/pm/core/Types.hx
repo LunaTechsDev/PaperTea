@@ -1,5 +1,6 @@
 package pm.core;
 
+
 import pm.core.Enums.AnimationEffectConditionKind;
 import pm.core.Enums.IncreaseDecreaseKind;
 import pm.core.Enums.AnimationPositionKind;
@@ -592,3 +593,4 @@ typedef CameraPropertiesJSON = {
    */
   public var f: Float;
 }
+

@@ -7,6 +7,7 @@ import pm.core.Types.StaticProgressionJSON;
  * Statistic Progression within the game.
  */
 extern class StatisticProgression extends BaseSystem {
+
   /**
    * Static Progression ID
    */
