@@ -38,3 +38,4 @@ extern class AnimationFrameEffect extends BaseSystem {
    */
   public function playSE(condition: AnimationEffectConditionKind): Void;
 }
+
