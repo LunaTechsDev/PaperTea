@@ -2,6 +2,7 @@
 -lib howlerjs
 -lib threejs
 -lib toy-box
+-lib electron
 
 # Code Directory
 -cp src

@@ -22,6 +22,10 @@ Officially supported by RPG Paper Maker.
 * Conditional Compilation
 * Macros
 
+
+## Structure Breakdown
+> All paper maker game scripts are in the PM module. Additional C++ Code will be in the CM module.
+
 ## Dependencies
 
 * Howler 2.0.3 | v2.1.3
