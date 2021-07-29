@@ -1,5 +1,6 @@
 package pm.common;
 
+@:native('ScreenResolution')
 extern class ScreenResolution {
   public static var SCREEN_X: Float;
   public static var SCREEN_Y: Float;
@@ -10,8 +11,8 @@ extern class ScreenResolution {
 
   /** Get the pixel position transformation according to screen size
    *   @static
-   *   @param {number} x - The position on screen
-   *   @returns {number}
+   *   @param {Float} x - The position on screen
+   *   @returns {Float}
    */
   public static function getScreenX(x: Float): Float;
 
