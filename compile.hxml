@@ -3,6 +3,7 @@
 -lib threejs
 -lib toy-box
 -lib electron
+-lib jsImport
 
 # Code Directory
 -cp src
