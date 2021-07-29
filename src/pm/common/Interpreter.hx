@@ -33,6 +33,7 @@ typedef FormulaObjT = {
 /**
  * Interpreter to evaluate formulas or 
  * simple scripts without having to import.
+ * Static class
  */
 @:native('Interpreter')
 extern class Interpreter {
