@@ -1,6 +1,7 @@
 -lib hxnodejs
 -lib howlerjs
 -lib threejs
+-lib toy-box
 
 # Code Directory
 -cp src
