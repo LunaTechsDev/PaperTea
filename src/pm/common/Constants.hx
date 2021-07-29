@@ -312,4 +312,14 @@ extern class Constants {
    * k
    */
   public static var JSON_KEY: String;
+
+  /**
+   * v
+   */
+  public static var JSON_VALUE: String;
+
+  /**
+   * .json
+   */
+  public static var EXTENSION_JSON: String;
 }
