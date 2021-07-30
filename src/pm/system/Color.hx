@@ -9,11 +9,19 @@ import js.three.Vector3;
  */
 @:native('Color')
 extern class Color extends BaseSystem {
+  function new(?json: {});
   public var red: Float;
   public var green: Float;
   public var blue: Float;
   public var alpha: Float;
   public var rgb: String;
+
+  public static var prototype: Color;
+  public static var GREEN: Color;
+  public static var RED: Color;
+  public static var WHITE: Color;
+  public static var BLACK: Color;
+  public static var GREY: Color;
 
   /** 
    * Create a new color according to RGBA values
