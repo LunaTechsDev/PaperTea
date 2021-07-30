@@ -1,5 +1,11 @@
 package pm.system;
 
+/** @class
+ *  A monster of the game.
+ *  @extends System.Hero
+ *  @param {Record<string, any>} - [json=undefined] Json object describing the 
+ *  monster
+ */
 extern class Monster extends Hero {
   function new(?json: {});
   var rewards: StructReward;

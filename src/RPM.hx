@@ -1,3 +1,11 @@
+import pm.common.Common;
+import pm.manager.Manager;
+import pm.core.Core;
+import pm.datas.Datas;
+import pm.system.System;
+import pm.scene.Scene;
+import pm.event.EventCommand;
+
 // Turns into the form import { RPM } from "../path.js"
 @:js.import('../path.js')
 extern class RPM {
