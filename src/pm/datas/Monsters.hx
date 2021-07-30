@@ -1,5 +1,6 @@
 package pm.datas;
 
+import pm.system.Monster;
 import js.lib.Promise;
 
 /**
