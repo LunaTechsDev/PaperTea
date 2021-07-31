@@ -1,5 +1,7 @@
 package pm.system;
 
+import pm.core.Enums.TroopReactionFrequencyKind;
+
 /** @class
  *  A troop reaction conditions of the game.
  *  @extends System.Base

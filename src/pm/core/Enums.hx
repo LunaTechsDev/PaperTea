@@ -578,3 +578,29 @@ enum abstract OperationKind(Int) from Int to Int {
   public var GreaterThan = 4;
   public var LesserThan = 5;
 }
+
+// TODO: Convert enums to extern enums later for ease of use
+
+/**
+  Enum for the troop reaction frequency kind.
+**/
+extern enum abstract TroopReactionFrequencyKind(Int) from Int to Int {
+  var OneTime;
+  var EachTurnBegin;
+  var EachTurnEnd;
+  var Always;
+}
+
+/**
+  Enum for the main menu command kind.
+**/
+extern enum abstract MainMenuCommandKind(Int) from Int to Int {
+  var Inventory;
+  var Skills;
+  var Equip;
+  var States;
+  var Order;
+  var Save;
+  var Quit;
+  var Script;
+}
