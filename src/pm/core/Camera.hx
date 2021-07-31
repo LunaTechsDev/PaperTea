@@ -3,6 +3,12 @@ package pm.core;
 import pm.core.Enums.Orientation;
 import pm.system.MapObject;
 
+/** @class
+ *  The camera of the current map.
+ *  @param {System.CameraProperties} cameraProperties - The System camera
+ *  properties
+ *  @param {MapObject} target - The camera target
+ */
 extern class Camera {
   function new(cameraProperties: Dynamic, target: MapObject);
   var system: Dynamic;

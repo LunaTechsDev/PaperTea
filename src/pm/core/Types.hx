@@ -646,3 +646,42 @@ typedef ChoicesOptions = {
   @:optional
   var bordersVisible: Bool;
 };
+
+typedef StructMapElementCollision = {
+  @:optional
+  var b: Array<Float>;
+  @:optional
+  var p: Position;
+  @:optional
+  var l: Vector3;
+  @:optional
+  var c: Vector3;
+  @:optional
+  var cs: CollisionSquare;
+  @:optional
+  var w: Float;
+  @:optional
+  var h: Float;
+  @:optional
+  var d: Float;
+  @:optional
+  var rw: Float;
+  @:optional
+  var rh: Float;
+  @:optional
+  var m: Float;
+  @:optional
+  var t: MapElement;
+  @:optional
+  var k: Bool;
+  @:optional
+  var left: Bool;
+  @:optional
+  var right: Bool;
+  @:optional
+  var top: Bool;
+  @:optional
+  var bot: Bool;
+  @:optional
+  var a: Float;
+};
