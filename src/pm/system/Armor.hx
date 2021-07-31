@@ -30,6 +30,6 @@ extern class Armor extends CommonSkillItem {
    * Get the armor type
    * @return {WeaponArmorKind}
    */
-  public function getType(): Any; // TODO: Update the SysWeaponArmorKind
+  public function getType(): WeaponArmorKind; // TODO: Update the SysWeaponArmorKind
 
 }

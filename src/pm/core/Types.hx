@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.system.MapObject;
 import pm.core.Enums.AnimationEffectConditionKind;
 import pm.core.Enums.IncreaseDecreaseKind;
 import pm.core.Enums.AnimationPositionKind;
@@ -684,4 +685,16 @@ typedef StructMapElementCollision = {
   var bot: Bool;
   @:optional
   var a: Float;
+};
+
+typedef StructSearchResult = {
+  var object: MapObject;
+  var id: Float;
+  var datas: {};
+  @:optional
+  var kind: Float;
+  @:optional
+  var index: Float;
+  @:optional
+  var list: Array<MapObject>;
 };
