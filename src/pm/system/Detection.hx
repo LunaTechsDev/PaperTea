@@ -2,6 +2,12 @@ package pm.system;
 
 import pm.core.Position;
 
+/** @class
+ *  A detection of the game.
+ *  @extends System.Base
+ *  @param {Record<string, any>} - [json=undefined] Json object describing the 
+ *  detection
+ */
 extern class Detection extends Base {
   function new(?json: {});
   var boxes: Array<ts.Tuple3<Position, Float, Float>>;
