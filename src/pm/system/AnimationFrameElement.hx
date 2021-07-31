@@ -7,7 +7,7 @@ import pm.core.Picture2D;
 /** @class
  * An animation frame element
  */
-extern class AnimationFrameElements extends BaseSystem {
+extern class AnimationFrameElement extends BaseSystem {
   /**
    * X Position
    */
