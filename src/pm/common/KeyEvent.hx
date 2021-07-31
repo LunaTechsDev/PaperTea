@@ -4,6 +4,7 @@ package pm.common;
   The key event class used to convert Qt keys to web keys.
 **/
 // TODO: Convert all the numbers to Integers
+@:native('KeyEvent')
 extern class KeyEvent {
   function new();
   static var prototype: KeyEvent;

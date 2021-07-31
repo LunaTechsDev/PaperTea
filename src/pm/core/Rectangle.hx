@@ -1,5 +1,6 @@
 package pm.core;
 
+@:native('Rectangle')
 extern class Rectangle {
   public var x: Float;
   public var y: Float;

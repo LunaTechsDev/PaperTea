@@ -2,6 +2,7 @@ package pm.common;
 
 import js.three.Vector3;
 
+@:native('Mathf')
 extern class Mathf {
   public static function isEmpty(array: Array<Any>): Bool;
 

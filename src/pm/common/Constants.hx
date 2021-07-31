@@ -3,6 +3,7 @@ package pm.common;
 /**
  * Common class for constants and static functions
  */
+@:native('Constants')
 extern class Constants {
   /**
    * 8

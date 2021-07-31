@@ -1,5 +1,6 @@
 package pm.core;
 
+@:native('Position')
 extern class Position extends Portion {
   function new(?x: Float, ?y: Float, ?z: Float, ?yPixels: Float, ?layer: Float, ?centerX: Float, ?centerZ: Float,
     ?angleY: Float, ?angleX: Float, ?angleZ: Float);

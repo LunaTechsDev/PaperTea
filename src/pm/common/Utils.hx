@@ -2,6 +2,7 @@ package pm.common;
 
 import js.lib.Promise;
 
+@:native('Utils')
 extern class Utils {
   /**
    * Return the default value if undefined.

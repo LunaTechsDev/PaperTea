@@ -1,5 +1,6 @@
 package pm.core;
 
+@:native('Portion')
 extern class Portion {
   function new(?x: Float, ?y: Float, ?z: Float);
   var x: Float;
