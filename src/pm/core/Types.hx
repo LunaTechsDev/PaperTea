@@ -1,6 +1,5 @@
 package pm.core;
 
-
 import pm.core.Enums.AnimationEffectConditionKind;
 import pm.core.Enums.IncreaseDecreaseKind;
 import pm.core.Enums.AnimationPositionKind;
@@ -10,6 +9,7 @@ import haxe.extern.EitherType;
 import haxe.DynamicAccess;
 import pm.core.Enums.ElementMapKind;
 import pm.core.Enums.SpriteWallKind;
+import pm.core.Enums.OrientationWindow;
 
 typedef NumOrDynamic = EitherType<Float, DynamicValue>;
 
@@ -493,7 +493,7 @@ typedef PlaySongJSON = {
   /**
    * Is Start
    */
-  public var is: Bool;
+  public var is : Bool;
 
   /**
    * Start
@@ -594,3 +594,55 @@ typedef CameraPropertiesJSON = {
   public var f: Float;
 }
 
+/**
+  the choices options used for the window initialization
+**/
+typedef ChoicesOptions = {
+  /**
+    The choices callbacks
+  **/
+  @:optional
+  var listCallbacks: Array<haxe.Constraints.Function>;
+
+  /**
+    The choices list orientation
+  **/
+  @:optional
+  var orientation: OrientationWindow;
+
+  /**
+    The max number of choices displayed
+  **/
+  @:optional
+  var nbItemsMax: Float;
+
+  /**
+    The window padding
+  **/
+  @:optional
+  var padding: Array<Float>;
+
+  /**
+    the space in between choices.
+  **/
+  @:optional
+  var space: Float;
+
+  /**
+    The current selected choices index.
+  **/
+  @:optional
+  var currentSelectedIndex: Float;
+
+  /**
+    If enabled the inside border will be visible.
+  **/
+  @:optional
+  var bordersInsideVisible: Bool;
+
+  /**
+    If enabled the inside border will be visible.
+  **/
+  @:optional
+  var bordersVisible: Bool;
+};
