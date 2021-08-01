@@ -7,6 +7,7 @@ package pm.system;
  *  parameter value
  */
 @:native('Parameter')
+@:js.import('../../System/System/Picture.js')
 extern class Parameter extends Base {
   function new(?json: {});
   var value: DynamicValue;

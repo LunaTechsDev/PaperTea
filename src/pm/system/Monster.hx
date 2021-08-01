@@ -6,6 +6,8 @@ package pm.system;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  monster
  */
+@:native('Monster')
+@:js.import('../../System/System/Monster.js')
 extern class Monster extends Hero {
   function new(?json: {});
   var rewards: StructReward;

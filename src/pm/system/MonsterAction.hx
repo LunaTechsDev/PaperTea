@@ -6,6 +6,8 @@ package pm.system;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  monster action
  */
+@:native('MonsterAction')
+@:js.import('../../System/System/MonsterAction.js')
 extern class MonsterAction extends Base {
   function new(?json: {});
   var actionKind: Float;

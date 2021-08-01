@@ -6,6 +6,8 @@ package pm.system;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  mountain
  */
+@:native('Mountain')
+@:js.import('../../System/System/Mountain.js')
 extern class Mountain extends SpecialElement {
   function new(?json: {});
   var id: Float;

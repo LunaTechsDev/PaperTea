@@ -5,6 +5,7 @@ import pm.core.Picture2D;
 import pm.core.CollisionSquare;
 
 @:native('Picture')
+@:js.import('../../System/System/Picture.js')
 extern class Picture extends Base {
   function new(?json: {}, ?kind: PictureKind);
   var id: Float;
