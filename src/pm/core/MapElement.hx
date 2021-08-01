@@ -12,7 +12,10 @@ import js.three.Vector3;
  *   @property {Orientation} orientation The orientation according to layer
  *   @property {CameraUpDown} upDown The camera up down orientation according to
  *   layer
- */ extern class MapElement {
+ */
+@:native('MapElement')
+@:js.import('../../System/Core/MapElement.js')
+extern class MapElement {
   public var xOffset: Float;
   public var yOffset: Float;
   public var zOffset: Float;

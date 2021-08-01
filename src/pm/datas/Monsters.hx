@@ -7,6 +7,7 @@ import js.lib.Promise;
  * This class handles the monster data
  */
 @:native('Monsters')
+@:js.import('../../System/Datas/Monsters.js')
 extern class Monsters {
   static var list: Array<Monster>; // System Monster
 

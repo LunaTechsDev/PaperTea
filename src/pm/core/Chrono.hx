@@ -1,5 +1,7 @@
 package pm.core;
 
+@:native('Chrono')
+@:js.import('../../System/Core/Chrono.js')
 extern class Chrono {
   function new(?start: Float, ?id: Float, ?reverse: Bool, ?displayOnScreen: Bool);
   var id: Float;

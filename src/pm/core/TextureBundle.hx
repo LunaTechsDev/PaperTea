@@ -12,6 +12,8 @@ import js.three.MeshStandardMaterial;
  *   @property {number[]} endPoint The ending texture point offset
  *   array
  */
+@:native('TextureBundle')
+@:js.import('../../System/Core/TextureBundle.js')
 extern class TextureBundle {
   public var list: Array<Array<Float>>;
   public var texture: MeshStandardMaterial;

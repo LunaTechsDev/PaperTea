@@ -9,6 +9,8 @@ import pm.system.MapObject;
  *  properties
  *  @param {MapObject} target - The camera target
  */
+@:native('Camera')
+@:js.import('../../System/Core/Camera.js')
 extern class Camera {
   function new(cameraProperties: Dynamic, target: MapObject);
   var system: Dynamic;

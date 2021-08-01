@@ -2,6 +2,8 @@ package pm.core;
 
 import pm.core.Enums.AnimationEffectConditionKind;
 
+@:native('Animation')
+@:js.import('../../System/Core/Animation.js')
 extern class Animation {
   function new(id: Float, ?loop: Bool);
   var system: Dynamic;

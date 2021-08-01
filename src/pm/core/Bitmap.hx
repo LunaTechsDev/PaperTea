@@ -12,6 +12,8 @@ package pm.core;
  *   @param {number} [w=0] w coord of the bitmap
  *   @param {number} [h=0] h coord of the bitmap
  */
+@:native('Bitmap')
+@:js.import('../../System/Core/Bitmap.js')
 extern class Bitmap {
   public var x: Float;
   public var y: Float;

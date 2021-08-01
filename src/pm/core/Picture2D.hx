@@ -24,6 +24,8 @@ import pm.system.SystemPicture;
  *   @param {number} [w=0] Coords of the bitmap
  *   @param {number} [h=0] Coords of the bitmap
  */
+@:native('Picture2D')
+@:js.import('../../System/Core/Picture2D.js')
 extern class Picture2D extends Bitmap {
   public var zoom: Float;
   public var opacity: Float;

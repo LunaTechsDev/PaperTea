@@ -604,3 +604,17 @@ extern enum abstract MainMenuCommandKind(Int) from Int to Int {
   var Quit;
   var Script;
 }
+
+/**
+  Enum for the status restrictions kind.
+**/
+extern enum abstract StatusRestrictionsKind(Int) from Int to Int {
+  var None;
+  var CantDoAnything;
+  var CantUseSkills;
+  var CantUseItems;
+  var CantEscape;
+  var AttackRandomTarget;
+  var AttackRandomAlly;
+  var AttackRandomEnemy;
+}

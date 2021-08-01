@@ -1,6 +1,7 @@
 package pm.core;
 
 import pm.core.Enums.CharacterKind;
+import pm.core.Enums.ConditionHeroesKind;
 
 extern class Player {
   function new(?kind: CharacterKind, ?id: Float, ?instanceID: Float, ?skills: Array<{}>, ?status: Array<{}>,

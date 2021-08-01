@@ -13,6 +13,7 @@ import electron.Display;
  * @class Platform
  */
 @:native('Platform')
+@:js.import('../../System/Common/Platform.js')
 extern class Platform {
   /**
    * Root Directory of the application

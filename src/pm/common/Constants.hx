@@ -4,6 +4,7 @@ package pm.common;
  * Common class for constants and static functions
  */
 @:native('Constants')
+@:js.import('../../System/Common/Constants.js')
 extern class Constants {
   /**
    * 8

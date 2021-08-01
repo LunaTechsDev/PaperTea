@@ -5,6 +5,8 @@ import pm.core.Types.ArmorJSON;
 /**
  * An armor within the game.
  */
+@:native('Armor')
+@:js.import('../../System/System/Armor.js')
 extern class Armor extends CommonSkillItem {
   /**
    * Indicates whether the armor has an effect or not

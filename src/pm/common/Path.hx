@@ -1,6 +1,7 @@
 package pm.common;
 
 @:native('Paths') // TODO: Subject to change
+@:js.import('../../System/Common/Paths.js')
 extern class Path {
   /**
    * ""

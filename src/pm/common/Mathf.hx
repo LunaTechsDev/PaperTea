@@ -3,6 +3,7 @@ package pm.common;
 import js.three.Vector3;
 
 @:native('Mathf')
+@:js.import('../../System/Common/Mathf.js')
 extern class Mathf {
   public static function isEmpty(array: Array<Any>): Bool;
 

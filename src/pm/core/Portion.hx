@@ -1,6 +1,7 @@
 package pm.core;
 
 @:native('Portion')
+@:js.import('../../System/Core/Portion.js')
 extern class Portion {
   function new(?x: Float, ?y: Float, ?z: Float);
   var x: Float;

@@ -2,6 +2,7 @@ package pm.core;
 
 import pm.system.ProgressionTable;
 import pm.core.Enums.BattlerStep;
+import pm.core.Enums.StatusRestrictionsKind;
 
 /** @class
  *  A battler in a battle (ally or ennemy).
@@ -9,6 +10,8 @@ import pm.core.Enums.BattlerStep;
  *  @param {Vector3} position - The battler position
  *  @param {Camera} camera - the camera associated to the battle
  */
+@:native('Battler')
+@:js.import('../../System/Core/Battler.js')
 extern class Battler {
   function new(player: Player, ?position: Position, ?vect: Vector3, ?camera: Camera);
   var player: Player;

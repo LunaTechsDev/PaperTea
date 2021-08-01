@@ -2,6 +2,8 @@ package pm.core;
 
 typedef AnchorPos = {x: Float, y: Float}
 
+@:native('Anchor2D')
+@:js.import('../../System/Core/Anchor2D.js')
 extern class Anchor2D {
   /**
    * ```js

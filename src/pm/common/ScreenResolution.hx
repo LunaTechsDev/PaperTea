@@ -1,6 +1,7 @@
 package pm.common;
 
 @:native('ScreenResolution')
+@:js.import('../../System/Common/ScreenResolution.js')
 extern class ScreenResolution {
   public static var SCREEN_X: Float;
   public static var SCREEN_Y: Float;

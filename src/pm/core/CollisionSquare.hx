@@ -2,6 +2,8 @@ package pm.core;
 
 import pm.core.Types.CollisionSquareJSON;
 
+@:native('CollisionSquare')
+@:js.import('../../System/Core/CollisionSquare.js')
 extern class CollisionSquare {
   public var rect: Array<Float>;
   public var left: Bool;

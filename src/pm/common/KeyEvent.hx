@@ -5,8 +5,10 @@ package pm.common;
 **/
 // TODO: Convert all the numbers to Integers
 @:native('KeyEvent')
+@:js.import('../../System/Common/KeyEvent.js')
 extern class KeyEvent {
   function new();
+
   static var prototype: KeyEvent;
   static var keysPressed: Array<Float>;
   static var DOM_VK_CANCEL: Float;

@@ -9,6 +9,7 @@ import js.lib.Promise;
  * handles loading and saving.
  */
 @:native('IO')
+@:js.import('../../System/Common/IO.js')
 extern class IO {
   /** 
    *  Check if a file exists.

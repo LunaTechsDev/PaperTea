@@ -11,6 +11,8 @@ import pm.core.Enums.SpriteWallKind;
  *   @property {SpriteWallKind} kind The kind of wall (border or not)
  *   @param {Object} [json=undefined] Json object describing the wall
  */
+@:native('SpriteWall')
+@:js.import('../../System/Core/SpriteWall.js')
 extern class SpriteWall extends MapElement {
   public var id: Int;
   public var kind: SpriteWallKind;

@@ -1,6 +1,7 @@
 package pm.core;
 
 @:native('Rectangle')
+@:js.import('../../System/Core/Rectangle.js')
 extern class Rectangle {
   public var x: Float;
   public var y: Float;

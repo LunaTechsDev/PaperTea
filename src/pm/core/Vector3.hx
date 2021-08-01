@@ -5,7 +5,10 @@ package pm.core;
  * @property {Float} y
  * @property {Float} z
  * @property {Bool}
- */ extern class Vector3 { // Extends Three.Vector3
+ */
+@:native('Vector3')
+@:js.import('../../System/Core/Vector3.js')
+extern class Vector3 { // Extends Three.Vector3
   public var x: Float;
   public var y: Float;
   public var z: Float;

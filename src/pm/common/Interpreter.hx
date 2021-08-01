@@ -36,6 +36,7 @@ typedef FormulaObjT = {
  * Static class
  */
 @:native('Interpreter')
+@:js.import('../../System/Common/Interpreter.js')
 extern class Interpreter {
   /**
    * Type of result of the Common class

@@ -6,6 +6,8 @@ import pm.core.Enums.Align;
  *  A status affected to a player.
  *  @param {number} id - The ID of the status
  */
+@:native('Status')
+@:js.import('../../System/Core/Status.js')
 extern class Status {
   function new(id: Float, ?turn: Float);
   var id: Float;

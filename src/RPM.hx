@@ -7,7 +7,6 @@ import pm.scene.Scene;
 import pm.event.EventCommand;
 
 // Turns into the form import { RPM } from "../path.js"
-
 @:js.import('../path.js')
 extern class RPM {
   public static var Manager: Manager;
@@ -16,7 +15,5 @@ extern class RPM {
   public static var EventCommand: EventCommand;
   public static var Scene: Scene;
   public static var Common: Common;
-  public static var System: System;
+  // public static var System: System;
 }
-
-var CommonA: Common;

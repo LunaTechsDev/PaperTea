@@ -8,6 +8,8 @@ package pm.core;
  *   @property {Node} lastChild The last child of the node
  *   @property {Node} next The next parent child
  */
+@:native('Node')
+@:js.import('../../System/Core/Node.js')
 extern class Node {
   public var parent: Node;
   public var firstChild: Node;

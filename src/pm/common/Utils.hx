@@ -3,6 +3,7 @@ package pm.common;
 import js.lib.Promise;
 
 @:native('Utils')
+@:js.import('../../System/Common/Utils.js')
 extern class Utils {
   /**
    * Return the default value if undefined.

@@ -9,6 +9,8 @@ package pm.core;
  *   @param {number} [tick=0] The frame tick (= time spent since current frame)
  *   @param {number} [value=0] The current frame value
  */
+@:native('Frame')
+@:js.import('../../System/Core/Frame.js')
 extern class Frame {
   public var duration: Float;
   public var tick: Float;

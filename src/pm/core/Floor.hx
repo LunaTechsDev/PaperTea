@@ -8,6 +8,8 @@ import js.three.Geometry;
  *   @extends Land
  *   @param {Object} [json=undefined] Json object describing the floor
  */
+@:native('Floor')
+@:js.import('../../System/Core/Floor.js')
 extern class Floor extends Land {
   public function new(?json: FloorJSON): Void;
   public function read(json: FloorJSON): Void;

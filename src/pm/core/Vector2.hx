@@ -4,6 +4,8 @@ package pm.core;
  * @property {Float} x
  * @property {Float} y
  */
+@:native('Vector2')
+@:js.import('../../System/Core/Vector2.js')
 extern class Vector2 { // Extends Three.Vector2
   public var x: Float;
   public var y: Float;

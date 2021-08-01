@@ -5,6 +5,8 @@ package pm.core;
  *   @property {Node} root Node representing the root of the tree
  *   @param {Object} data The data
  */
+@:native('Tree')
+@:js.import('../../System/Core/Tree.js')
 extern class Tree {
   public var root: Node;
   public function new(data: Any): Void;

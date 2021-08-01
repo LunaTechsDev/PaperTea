@@ -19,6 +19,8 @@ import js.three.Vector3;
  *   @property {number[]} textureRect Texture UV coords
  *   @param {SpriteJSON} [json=undefined] Json object describing the sprite
  */
+@:native('Sprite')
+@:js.import('../../System/Core/Sprite.js')
 extern class Sprite extends MapElement {
   public static var Y_AXIS: Vector3;
   public static var X_AXIS: Vector3;

@@ -8,6 +8,8 @@ import pm.core.Types.LandJSON;
  *   @property {boolean} up Indicate if the layer is up or down
  *   @property {number[]} texture Texture rect of the land
  */
+@:native('Land')
+@:js.import('../../System/Core/Land.js')
 extern class Land extends MapElement {
   public var up: Bool;
   public var texture: Array<Float>;

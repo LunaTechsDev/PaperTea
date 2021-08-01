@@ -5,8 +5,8 @@ function main() {
   var common = RPM.Common;
 
   trace(common);
-  var constants = RPM.Common.Constants;
+  var constants = RPM.Common;
   var speedNormal = Constants.SMALL_FONT_SIZE;
-
+  trace(speedNormal, 'Speed normal from Constants');
   trace('Paper Maker plugin from Haxe programming language');
 }

@@ -11,6 +11,8 @@ import js.three.Geometry;
  *   autotiles outside
  *   @param {AutotileJSON} [json=undefined] Json object describing the autotile
  */
+@:native('Autotile')
+@:js.import('../../System/Core/Autotile.js')
 extern class Autotile extends Land {
   public var autotileID: Int;
   public var tileID: Int;

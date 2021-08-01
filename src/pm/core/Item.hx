@@ -2,6 +2,8 @@ package pm.core;
 
 import pm.core.Enums.ItemKind;
 
+@:native('Item')
+@:js.import('../../System/Core/Item.js')
 extern class Item {
   function new(kind: ItemKind, id: Float, nb: Float, ?shop: Dynamic);
   var kind: ItemKind;
