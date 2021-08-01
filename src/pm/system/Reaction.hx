@@ -3,6 +3,8 @@ package pm.system;
 import pm.core.Tree;
 import pm.core.Node;
 
+@:native('Reaction')
+@:js.import('../../System/System/Reaction.js')
 extern class Reaction extends Base {
   function new(?json: {});
   var labels: Array<ts.Tuple2<Dynamic, Node>>;

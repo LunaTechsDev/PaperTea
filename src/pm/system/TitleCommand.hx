@@ -8,6 +8,8 @@ import pm.core.Enums.TitleCommandKind;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  title screen command
  */
+@:native('TitleCommand')
+@:js.import('../../System/System/TitleCommand.js')
 extern class TitleCommand extends Translatable {
   function new(?json: {});
   var kind: TitleCommandKind;

@@ -2,7 +2,6 @@ package pm.system;
 
 import pm.core.Types.NumOrDynamic;
 import pm.core.Types.ProgressionJSON;
-import pm.core.Types.ProgressionJSON;
 import haxe.DynamicAccess;
 
 /** @class
@@ -17,6 +16,7 @@ import haxe.DynamicAccess;
  *   table
  */
 @:native('ProgressionTable')
+@:js.import('../../System/System/ProgressionTable.js')
 extern class ProgressionTable extends BaseSystem {
   public var id: Int;
   public var initialValue: DynamicValue;

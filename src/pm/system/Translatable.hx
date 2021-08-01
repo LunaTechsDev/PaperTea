@@ -3,6 +3,7 @@ package pm.system;
 import haxe.DynamicAccess;
 
 @:native('Translatable')
+@:js.import('../../System/System/Translatable.js')
 extern class Translatable extends Base {
   public function new(?json: DynamicAccess<Dynamic>);
 

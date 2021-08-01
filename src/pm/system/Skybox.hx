@@ -1,5 +1,7 @@
 package pm.system;
 
+@:native('Skybox')
+@:js.import('../../System/System/Skybox.js')
 extern class Skybox extends Base {
   function new(?json: {});
   var front: Float;

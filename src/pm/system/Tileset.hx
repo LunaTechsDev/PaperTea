@@ -8,6 +8,8 @@ import pm.core.CollisionSquare;
  *  @extends System.Base
  *  @param {Record<string, any>} - json Json object describing the tileset
  */
+@:native('Tileset')
+@:js.import('../../System/System/Tileset.js')
 extern class Tileset extends Base {
   function new(?json: {});
   var collisions: Array<CollisionSquare>;

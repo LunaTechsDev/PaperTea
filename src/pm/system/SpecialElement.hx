@@ -7,6 +7,7 @@ package pm.system;
  *  special element
  */
 @:native('SpecialElement')
+@:js.import('../../System/System/SpecialElement.js')
 extern class SpecialElement extends Base {
   function new(?json: {});
   var pictureID: Float;

@@ -7,6 +7,8 @@ import pm.core.Enums.ObjectMovingKind;
  *  @extends System.Base
  *  @param {Record<string, any>} - json Json object describing the object state
  */
+@:native('State')
+@:js.import('../../System/System/State.js')
 extern class State extends Base {
   function new(?json: {});
   var id: Float;
@@ -16,7 +18,7 @@ extern class State extends Base {
   var indexX: Float;
   var indexY: Float;
   var objectMovingKind: ObjectMovingKind;
-  var route: Dynamic;
+  var route: Reaction;
   var speedID: Float;
   var frequencyID: Float;
   var moveAnimation: Bool;
@@ -27,7 +29,7 @@ extern class State extends Base {
   var setWithCamera: Bool;
   var pixelOffset: Bool;
   var keepPosition: Bool;
-  var detection: Dynamic;
+  var detection: Dynamic; // Event Command Base
 
   /**
     Create a new instance of the System object state.

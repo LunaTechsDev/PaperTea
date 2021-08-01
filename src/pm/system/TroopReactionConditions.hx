@@ -3,6 +3,8 @@ package pm.system;
 import pm.core.Enums.OperationKind;
 import pm.core.Enums.ConditionHeroesKind;
 
+@:native('TroopReactionConditions')
+@:js.import('../../System/System/TroopReactionConditions.js')
 extern class TroopReactionConditions extends Base {
   function new(?json: {});
   var isNumberOfTurn: Bool;

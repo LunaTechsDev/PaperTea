@@ -9,6 +9,8 @@ import pm.core.Enums.CustomShapeKind;
  *  shape
  *  @param {CustomShapeKind} [kind=CustomShapeKin] - The kind of custom shape
  */
+@:native('Shape')
+@:js.import('../../System/System/Shape.js')
 extern class Shape extends Base {
   function new(?json: {}, ?kind: CustomShapeKind);
   var id: Float;

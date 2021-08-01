@@ -6,6 +6,8 @@ package pm.system;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  statistic
  */
+@:native('Statistic')
+@:js.import('../../System/System/Statistic.js')
 extern class Statistic extends Translatable {
   function new(?json: {});
   var suffixName: String;

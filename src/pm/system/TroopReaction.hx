@@ -8,6 +8,8 @@ import pm.core.Enums.TroopReactionFrequencyKind;
  *  @param {Record<string, any>} - [json=undefined] Json object describing the 
  *  troop reaction conditions
  */
+@:native('TroopReaction')
+@:js.import('../../System/System/TroopReaction.js')
 extern class TroopReaction extends Reaction {
   function new(?json: {});
   var id: Float;

@@ -6,8 +6,9 @@ import pm.core.Types.StaticProgressionJSON;
 /**
  * Statistic Progression within the game.
  */
+@:native('StatisticProgression')
+@:js.import('../../System/System/StatisticProgression.js')
 extern class StatisticProgression extends BaseSystem {
-
   /**
    * Static Progression ID
    */

@@ -7,6 +7,8 @@ import pm.core.Enums.OperationKind;
  *  @extends System.Base
  *  @param {Record<string, any>} - json Json object describing the object state
  */
+@:native('StatusReleaseTurn')
+@:js.import('../../System/System/StatusReleaseTurn.js')
 extern class StatusReleaseTurn extends Base {
   function new(?json: {});
   var operationTurnKind: OperationKind;

@@ -6,16 +6,18 @@ import pm.core.Enums.SongKind;
 /**
  * A way to play a song
  */
+@:native('PlaySong')
+@:js.import('../../System/System/PlaySong.js')
 extern class PlaySong extends BaseSystem {
   /**
    * ID of the previous playing music and is initialized to null.
    */
-  public static var previousMusic: Int;
+  public static var previousMusic: PlaySong;
 
   /**
    * ID of currently playing music and is initialized to null.
    */
-  public static var currentPlayingMusic: Int;
+  public static var currentPlayingMusic: PlaySong;
 
   public var kind: SongKind;
   public var songID: DynamicValue;
