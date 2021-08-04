@@ -2,6 +2,14 @@ package pm.system;
 
 import pm.core.Player;
 
+/** @class
+ *  An hero troop battle test.
+ *  @extends System.Base
+ *  @param {Record<string, any>} - [json=undefined] Json object describing the 
+ *  hero
+ */
+@:native('HeroTroopBattleTest')
+@:js.import('../../System/System/HeroTroopBattleTest.js')
 extern class HeroTroopBattleTest extends Base {
   function new(?json: {});
   var heroID: Float;
