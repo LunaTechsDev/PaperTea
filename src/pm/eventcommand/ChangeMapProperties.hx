@@ -1,5 +1,7 @@
 package pm.eventcommand;
 
+import pm.system.PlaySong;
+import pm.system.DynamicValue;
 import pm.system.MapObject;
 
 /** @class
@@ -11,18 +13,18 @@ import pm.system.MapObject;
 @:js.import('../../System/EventCommand/ChangeMapProperties.js')
 extern class ChangeMapProperties extends Base {
   function new(command: Array<Dynamic>);
-  var mapID: Dynamic;
+  var mapID: DynamicValue;
   var isTilesetID: Bool;
-  var tilesetID: Dynamic;
+  var tilesetID: DynamicValue;
   var isMusic: Bool;
-  var music: Dynamic;
+  var music: PlaySong;
   var isBackgroundSound: Bool;
-  var backgroundSound: Dynamic;
+  var backgroundSound: PlaySong;
   var isCameraPropertiesID: Bool;
-  var cameraPropertiesID: Dynamic;
+  var cameraPropertiesID: DynamicValue;
   var isSky: Bool;
   var skyKind: Float;
-  var skyID: Dynamic;
+  var skyID: DynamicValue;
 
   /**
     Initialize the current state.
