@@ -3,6 +3,10 @@ package pm.manager;
 import pm.system.MapObject;
 import pm.system.DynamicValue;
 
+/** @class
+ *  A static class for some events functions.
+ *  @static
+ */
 @:native('Events')
 @:js.import('../../System/Manager/Events.js')
 extern class Events {
