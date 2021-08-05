@@ -3,6 +3,10 @@ package pm.system;
 import js.three.Geometry;
 import js.three.Scene;
 
+/** @class
+ *  The properties of a map.
+ *  @extends System.Base
+ */
 @:native('MapProperties')
 @:js.import('../../System/System/MapProperties.js')
 extern class MapProperties extends Base {

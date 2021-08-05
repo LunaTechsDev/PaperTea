@@ -2,6 +2,8 @@ package pm.core;
 
 import pm.core.Types.StructMapElementCollision;
 
+@:native('Autotiles')
+@:js.import('../../System/Core/Autotiles.js')
 extern class Autotiles {
   function new(bundle: TextureBundle);
   var bundle: TextureBundle;

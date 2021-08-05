@@ -10,6 +10,9 @@ import pm.scene.SceneGame;
  *   @property {SceneGame[]} subTop The stack top - 1 content
  *   @property {SceneGame[]} bot The stack bot content
  */
+@:native('Stack')
+@:js.import('../../System/Manager/Stack.js')
+// TODO: Check for any missing data
 extern class GameStack {
   public var content: Array<SceneGame>;
   public var top: Array<SceneGame>;
