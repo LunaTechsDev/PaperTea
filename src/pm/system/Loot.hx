@@ -2,6 +2,12 @@ package pm.system;
 
 import pm.core.Item;
 
+/** @class
+ *  A loot of the game.
+ *  @extends System.Base
+ *  @param {Record<string, any>} - [json=undefined] Json object describing the 
+ *  loot
+ */
 @:native('Loot')
 @:js.import('../../System/System/Loot.js')
 extern class Loot extends Base {
