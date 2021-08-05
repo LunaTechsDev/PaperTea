@@ -1,6 +1,13 @@
 package pm.manager;
 
-@:jsRequire("./Content/Datas/Scripts/System/Manager/Plugins", "Plugins") extern class Plugins {
+/** @class
+ *  The class who handles plugins of RPG Paper Maker.
+ *  @static
+ *  @author Nio Kasgami, Wano
+ */
+@:native('Plugins')
+@:js.import('../../System/Manager/Plugins.js')
+extern class Plugins {
   function new();
   static var prototype: Plugins;
   static var plugins: {};
