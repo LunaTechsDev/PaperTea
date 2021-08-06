@@ -3,6 +3,10 @@ package pm.eventcommand;
 import pm.system.MapObject;
 import pm.system.DynamicValue;
 
+/** @class
+ *  An event command for changing status.
+ *  @extends EventCommand.Base
+ */
 @:native('ChangeStatus')
 @:js.import('../../System/EventCommand/ChangeStatus.js')
 extern class ChangeStatus extends Base {

@@ -3,6 +3,11 @@ package pm.eventcommand;
 import pm.system.MapObject;
 import pm.system.DynamicValue;
 
+/** @class
+ *  An event command for changing an object state.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
 @:native('ChangeState')
 @:js.import('../../System/EventCommand/ChangeState.js')
 extern class ChangeState extends Base {
