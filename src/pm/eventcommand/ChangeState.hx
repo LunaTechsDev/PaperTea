@@ -4,6 +4,7 @@ import pm.system.MapObject;
 import pm.system.DynamicValue;
 
 @:native('ChangeState')
+@:js.import('../../System/EventCommand/ChangeState.js')
 extern class ChangeState extends Base {
   function new(command: Array<Dynamic>);
   var mapID: DynamicValue;
