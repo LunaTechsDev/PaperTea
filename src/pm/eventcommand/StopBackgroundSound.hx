@@ -1,8 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index",
-  "StopBackgroundSound") extern class StopBackgroundSound extends Base {
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for stopping the background sound.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('StopBackgroundSound')
+@:js.import('../../System/EventCommand/StopBackgroundSound.js')
+extern class StopBackgroundSound extends Base {
   function new(command: Array<Dynamic>);
 
   /**

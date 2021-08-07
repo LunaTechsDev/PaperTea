@@ -1,11 +1,19 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index",
-  "StartShopMenu") extern class StartShopMenu extends Base {
+import pm.system.MapObject;
+import pm.system.DynamicValue;
+
+/** @class
+ *  An event command for sarting shop menu.
+ *  @extends EventCommand.Base
+ *  @param {Object} command - Direct JSON command to parse
+ */
+@:native('StartShopMenu')
+@:js.import('../../System/EventCommand/StartShopMenu.js')
+extern class StartShopMenu extends Base {
   function new(command: Array<Dynamic>, ?isRestock: Bool);
-  var buyOnly: Dynamic;
-  var shopID: Dynamic;
+  var buyOnly: DynamicValue;
+  var shopID: DynamicValue;
   var items: Array<Dynamic>;
   var isRestock: Bool;
 

@@ -1,7 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "WhileBreak") extern class WhileBreak extends Base {
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for leaving while event command.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('WhileBreak')
+@:js.import('../../System/EventCommand/WhileBreak.js')
+extern class WhileBreak extends Base {
   function new(command: Array<Dynamic>);
 
   /**

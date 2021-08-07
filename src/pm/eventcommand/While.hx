@@ -1,7 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "While") extern class While extends Base {
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for loop event command block.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('While')
+@:js.import('../../System/EventCommand/While.js')
+extern class While extends Base {
   function new(command: Array<Dynamic>);
 
   /**

@@ -4,6 +4,11 @@ import pm.system.DynamicValue;
 import pm.system.MapObject;
 import pm.core.WindowBox;
 
+/** @class
+ *  An event command for displaying text.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
 @:native('ShowText')
 @:js.import('../../System/EventCommand/ShowText.js')
 extern class ShowText extends Base {

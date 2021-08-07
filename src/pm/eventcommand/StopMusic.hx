@@ -1,7 +1,16 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "StopMusic") extern class StopMusic extends Base {
+import pm.core.Enums.SongKind;
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for stopping the music.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('StopMusic')
+@:js.import('../../System/EventCommand/StopMusic.js')
+extern class StopMusic extends Base {
   function new(command: Array<Dynamic>);
 
   /**

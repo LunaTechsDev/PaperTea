@@ -1,8 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index",
-  "TeleportObject") extern class TeleportObject extends Base {
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for teleporting an object.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('TeleportObject')
+@:js.import('../../System/EventCommand/TeleportObject.js')
+extern class TeleportObject extends Base {
   function new(command: Array<Dynamic>);
   var objectID: Dynamic;
   var objectIDPosition: Dynamic;

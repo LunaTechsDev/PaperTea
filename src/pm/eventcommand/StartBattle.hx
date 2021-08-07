@@ -3,6 +3,11 @@ package pm.eventcommand;
 import pm.system.MapObject;
 import pm.system.DynamicValue;
 
+/** @class
+ *  An event command for battle processing.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
 @:native('StartBattle')
 @:js.import('../../System/EventCommand/StartBattle.js')
 extern class StartBattle extends Base {
