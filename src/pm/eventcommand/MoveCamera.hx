@@ -1,23 +1,28 @@
 package pm.eventcommand;
 
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "MoveCamera") extern class MoveCamera extends Base {
+import pm.system.MapObject;
+import pm.system.DynamicValue;
+
+@:native('MoveCamera')
+@:js.import('../../System/EventCommand/MoveCamera.js')
+extern class MoveCamera extends Base {
   function new(command: Array<Dynamic>);
-  var targetID: Dynamic;
+  var targetID: DynamicValue;
   var operation: Float;
   var moveTargetOffset: Bool;
   var cameraOrientation: Bool;
-  var x: Dynamic;
+  var x: DynamicValue;
   var xSquare: Bool;
-  var y: Dynamic;
+  var y: DynamicValue;
   var ySquare: Bool;
-  var z: Dynamic;
+  var z: DynamicValue;
   var zSquare: Bool;
   var rotationTargetOffset: Bool;
-  var h: Dynamic;
-  var v: Dynamic;
-  var distance: Dynamic;
+  var h: DynamicValue;
+  var v: DynamicValue;
+  var distance: DynamicValue;
   var isWaitEnd: Bool;
-  var time: Dynamic;
+  var time: DynamicValue;
 
   /**
     Initialize the current state.
