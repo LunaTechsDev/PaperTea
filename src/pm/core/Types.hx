@@ -698,3 +698,32 @@ typedef StructSearchResult = {
   @:optional
   var list: Array<MapObject>;
 };
+
+/**
+  the window box options
+**/
+typedef WindowBoxOptions = {
+  /**
+    The contents displayed inside the window.
+  **/
+  @:optional
+  var content: Dynamic;
+
+  /**
+    The window padding
+  **/
+  @:optional
+  var padding: Array<Float>;
+
+  /**
+    If enabled the contents will be cut according to the padding size.
+  **/
+  @:optional
+  var limitContent: Bool;
+
+  /**
+    Indicate if selected.
+  **/
+  @:optional
+  var selected: Bool;
+};
