@@ -1,7 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "ShakeScreen") extern class ShakeScreen extends Base {
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for shaking screen.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('ShakeScreen')
+@:js.import('../../System/EventCommand/ShakeScreen.js')
+extern class ShakeScreen extends Base {
   function new(command: Array<Dynamic>);
   var offset: Dynamic;
   var shakeNumber: Dynamic;
