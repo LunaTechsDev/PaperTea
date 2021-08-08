@@ -11,7 +11,7 @@ package pm.graphic;
   /**
     Get the selected player.
   **/
-  function getSelectedPlayer(): content.datas.scripts.system.core.index.Player;
+  function getSelectedPlayer(): Player;
 
   /**
     Set skill item.

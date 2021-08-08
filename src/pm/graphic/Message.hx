@@ -1,14 +1,29 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "Message") extern class Message {
+import pm.core.Enums.Align;
+import pm.core.Tree;
+import pm.core.Picture2D;
+import pm.core.Bitmap;
+import pm.core.Enums.TagKind;
+import pm.core.Node;
+
+/** @class
+ *  A class for message show text command.
+ *  @extends Graphic.Base
+ *  @param {string} message - The complete text to parse
+ *  @param {number} facesetID - The faceset picture ID
+ */
+@:native('Message')
+@:js.import('../../System/Graphic/Message.js')
+extern class Message {
   function new(message: String, facesetID: Float);
   var message: String;
-  var faceset: content.datas.scripts.system.core.index.Picture2D;
-  var graphics: Array<content.datas.scripts.system.core.index.Bitmap>;
+  var faceset: Picture2D;
+  var graphics: Array<Bitmap>;
   var positions: Array<Float>;
-  var tree: content.datas.scripts.system.core.tree.Tree;
+  var tree: Tree;
   var heights: Array<Float>;
-  var aligns: Array<content.datas.scripts.system.common.enum.enum.Align>;
+  var aligns: Array<Align>;
   var totalWidths: Array<Float>;
 
   /**
@@ -19,9 +34,7 @@ package pm.graphic;
   /**
     Update tag.
   **/
-  function updateTag(currentNode: content.datas.scripts.system.core.node.Node,
-    tag: content.datas.scripts.system.common.enum.enum.TagKind, value: String, open: Bool,
-    notClosed: Array<content.datas.scripts.system.core.node.Node>): content.datas.scripts.system.core.node.Node;
+  function updateTag(currentNode: Node, tag: TagKind, value: String, open: Bool, notClosed: Array<Node>): Node;
 
   /**
     Update all.
@@ -31,7 +44,7 @@ package pm.graphic;
   /**
     Update the nodes.
   **/
-  function updateNodes(node: content.datas.scripts.system.core.node.Node, result: {}): Void;
+  function updateNodes(node: Node, result: {}): Void;
 
   /**
     Drawing the faceset behind.

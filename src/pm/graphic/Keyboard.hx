@@ -7,8 +7,8 @@ package pm.graphic;
 @:native('Keyboard')
 @:js.import('../../System/Graphic/Keyboard.js')
 extern class Keyboard extends Base {
-  function new(kb: Keyboard);
-  var kb: Keyboard;
+  function new(kb: pm.system.Keyboard);
+  var kb: pm.system.Keyboard;
   var graphicTextName: Text;
   var graphicTextShort: Text;
   var graphicTextInformation: Text;

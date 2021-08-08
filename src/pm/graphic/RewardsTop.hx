@@ -1,10 +1,15 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "RewardsTop") extern class RewardsTop extends Base {
+/** @class
+ *  The graphic displaying all experience + currencies
+ */
+@:native('RewardsTop')
+@:js.import('../../System/Graphic/RewardsTop.js')
+extern class RewardsTop extends Base {
   function new(xp: Float, currencies: {});
-  var graphicXP: Dynamic;
+  var graphicXP: Text;
   var graphicXPLength: Float;
-  var graphicCurrencies: Array<Dynamic>;
+  var graphicCurrencies: Array<TextIcon>;
 
   /**
     Drawing the progression.

@@ -1,9 +1,15 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "SpinBox") extern class SpinBox extends Base {
+/** @class
+ *  The graphic displaying spinbox inside.
+ *  @extends Graphic.Base
+ */
+@:native('SpinBox')
+@:js.import('../../System/Graphic/SpinBox.js')
+extern class SpinBox extends Base {
   function new(value: Float, ?times: Bool);
-  var graphicTimes: Dynamic;
-  var graphicValue: Dynamic;
+  var graphicTimes: Text;
+  var graphicValue: Text;
   var value: Float;
   var times: Bool;
 

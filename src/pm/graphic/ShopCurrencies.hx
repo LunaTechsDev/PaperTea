@@ -1,8 +1,10 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "ShopCurrencies") extern class ShopCurrencies extends Base {
+@:native('ShopCurrencies')
+@:js.import('../../System/Graphic/ShopCurrencies.js')
+extern class ShopCurrencies extends Base {
   function new();
-  var currencies: Array<Dynamic>;
+  var currencies: Array<TextIcon>;
   function getWidth(): Float;
 
   /**

@@ -1,6 +1,13 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "Setting") extern class Setting extends Base {
+/** @class
+ *  A class for all settings to display in screen.
+ *  @extends Graphic.Base
+ *  @param {number} id - 
+ */
+@:native('Setting')
+@:js.import('../../System/Graphic/Setting.js')
+extern class Setting extends Base {
   function new(id: Float);
   var graphicRight: Dynamic;
   var graphicTextLeft: Dynamic;

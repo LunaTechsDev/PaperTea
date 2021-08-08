@@ -1,22 +1,32 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index",
-  "PlayerDescription") extern class PlayerDescription extends Base {
-  function new(player: content.datas.scripts.system.core.index.Player);
-  var player: content.datas.scripts.system.core.index.Player;
-  var graphicNameCenter: Dynamic;
-  var graphicName: Dynamic;
-  var graphicClass: Dynamic;
-  var graphicLevelName: Dynamic;
-  var graphicLevel: Dynamic;
-  var graphicExpName: Dynamic;
-  var graphicExp: Dynamic;
-  var listStatsNames: Array<Dynamic>;
-  var listStats: Array<Dynamic>;
+import pm.core.Frame;
+import pm.core.Picture2D;
+
+/** @class
+ *  The graphic displaying the player minimal stats informations.
+ *  @extends Graphic.Base
+ *  @param {Player} player - The current selected player
+ *  @param {boolean} [reverse=false] - Indicate if the faceset should be reversed
+ */
+@:native('PlayerDescription')
+@:js.import('../../System/Graphic/PlayerDescription.js')
+extern class PlayerDescription extends Base {
+  function new(player: pm.core.Player);
+  var player: pm.core.Player;
+  var graphicNameCenter: Text;
+  var graphicName: Text;
+  var graphicClass: Text;
+  var graphicLevelName: Text;
+  var graphicLevel: Text;
+  var graphicExpName: Text;
+  var graphicExp: Text;
+  var listStatsNames: Array<Text>;
+  var listStats: Array<Text>;
   var listLength: Array<Float>;
-  var battler: content.datas.scripts.system.core.index.Picture2D;
-  var battlerFrame: content.datas.scripts.system.core.frame.Frame;
-  var listStatsProgression: Array<Dynamic>;
+  var battler: Picture2D;
+  var battlerFrame: Frame;
+  var listStatsProgression: Array<Text>;
   var maxLength: Float;
 
   /**

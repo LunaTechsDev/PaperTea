@@ -1,11 +1,18 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "TimeCurrencies") extern class TimeCurrencies extends Base {
+/** @class
+ *  The graphic displaying all currencies and play time in scene menu.
+ *  @extends Graphic.Base
+ */
+@:native('TimeCurrencies')
+@:js.import('../../System/Graphic/TimeCurrencies.js')
+extern class TimeCurrencies extends Base {
   function new();
-  var currencies: Array<Dynamic>;
+  var currencies: Array<TextIcon>;
   var time: Float;
-  var graphicPlayTime: Dynamic;
-  var height: Float;
+  var graphicPlayTime: Text;
+  // Comes from the height from Bitmap
+  // var height: Float;
   var offset: Float;
 
   /**

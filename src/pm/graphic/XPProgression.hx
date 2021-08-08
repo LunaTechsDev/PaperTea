@@ -1,8 +1,14 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "XPProgression") extern class XPProgression extends Base {
+/** @class
+ *  The graphic displaying all the progression for each character.
+ *  @extends Graphic.Base
+ */
+@:native('XXProgression')
+@:js.import('../../System/Graphic/XPProgression.js')
+extern class XPProgression extends Base {
   function new();
-  var graphicCharacters: Array<Dynamic>;
+  var graphicCharacters: Array<Player>;
 
   /**
     Update graphics experience.

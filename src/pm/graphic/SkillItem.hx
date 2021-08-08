@@ -3,7 +3,7 @@ package pm.graphic;
 @:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "SkillItem") extern class SkillItem extends Base {
   function new(system: Dynamic);
   var system: Dynamic;
-  var graphicElements: Array<content.datas.scripts.system.core.index.Picture2D>;
+  var graphicElements: Array<Picture2D>;
   var graphicName: Dynamic;
   var graphicType: Dynamic;
   var graphicDescription: Dynamic;

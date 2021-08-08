@@ -1,25 +1,47 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "Player") extern class Player extends Base {
-  function new(player: Dynamic, ?__1: {@:optional var isMainMenu: Bool; @:optional var reverse: Bool;});
-  var player: Dynamic;
+import pm.system.CommonSkillItem;
+import pm.core.Frame;
+import pm.core.Picture2D;
+
+/** @class
+ *  The graphic displaying the player minimal stats informations.
+ *  @extends Graphic.Base
+ *  @param {Player} player - The current selected player
+ *  @param {boolean} [reverse=false] - Indicate if the faceset should be reversed
+ */
+@:native('Player')
+@:js.import('../../System/Graphic/Player.js')
+extern class Player extends Base {
+  /**
+    * Constructor for Graphical Player
+    * @param player 
+    * @param __1 
+    * ```
+    * { isMainMenu = false, reverse = false }: {
+          isMainMenu?: boolean, reverse?: boolean } = {}
+    * ```
+   */
+  function new(player: pm.core.Player, ?__1: {@:optional var isMainMenu: Bool; @:optional var reverse: Bool;});
+
+  var player: pm.core.Player;
   var reverse: Bool;
-  var graphicName: Dynamic;
-  var graphicClass: Dynamic;
-  var graphicLevelName: Dynamic;
-  var graphicLevel: Dynamic;
-  var graphicExpName: Dynamic;
-  var graphicExp: Dynamic;
-  var listStatsNames: Array<Dynamic>;
-  var listStats: Array<Dynamic>;
+  var graphicName: Text;
+  var graphicClass: Text;
+  var graphicLevelName: Text;
+  var graphicLevel: Text;
+  var graphicExpName: Text;
+  var graphicExp: Text;
+  var listStatsNames: Array<Text>;
+  var listStats: Array<Text>;
   var maxStatNamesLength: Float;
   var maxStatLength: Float;
-  var faceset: content.datas.scripts.system.core.index.Picture2D;
-  var battler: content.datas.scripts.system.core.index.Picture2D;
-  var battlerFrame: content.datas.scripts.system.core.frame.Frame;
-  var graphicLevelUp: Dynamic;
+  var faceset: Picture2D;
+  var battler: Picture2D;
+  var battlerFrame: Frame;
+  var graphicLevelUp: Text;
   var displayNameLevel: Bool;
-  var graphicStatShort: Dynamic;
+  var graphicStatShort: Text;
   var isMainMenu: Bool;
 
   /**
@@ -45,7 +67,7 @@ package pm.graphic;
   /**
     Update stat short.
   **/
-  function updateStatShort(weaponArmor: Dynamic): Void;
+  function updateStatShort(weaponArmor: CommonSkillItem): Void;
 
   /**
     Update stat short to none.

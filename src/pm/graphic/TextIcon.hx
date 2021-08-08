@@ -1,17 +1,32 @@
 package pm.graphic;
 
-@:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "TextIcon") extern class TextIcon extends Base {
+import pm.core.Picture2D;
+import pm.core.Enums.Align;
+
+@:native('TextIcon')
+extern class TextIcon extends Base {
+  /**
+    * Constructor for Text Icons
+    * @param text 
+    * @param iconID 
+    * @param __2 
+    * @param textOptions 
+    * ```
+    *  { side = Align.Left, align = Align
+          .Left, space = Constants.MEDIUM_SPACE } = {}
+    * ```
+   */
   function new(text: String, iconID: Float,
-    ?__2: {@:optional var side: content.datas.scripts.system.common.enum.enum.Align; @:optional var align: content.datas.scripts.system.common.enum.enum.Align; @:optional var space: Float;},
-    ?textOptions: {});
+    ?__2: {@:optional var side: Align; @:optional var align: Align; @:optional var space: Float;}, ?textOptions: {});
+
   var text: String;
   var iconID: Float;
-  var system: Dynamic;
-  var side: content.datas.scripts.system.common.enum.enum.Align;
-  var align: content.datas.scripts.system.common.enum.enum.Align;
+  var system: pm.system.Base;
+  var side: Align;
+  var align: Align;
   var space: Float;
-  var graphicIcon: content.datas.scripts.system.core.index.Picture2D;
-  var graphicText: Dynamic;
+  var graphicIcon: Picture2D;
+  var graphicText: Text;
   var length: Float;
 
   /**

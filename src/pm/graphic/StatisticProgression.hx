@@ -2,8 +2,8 @@ package pm.graphic;
 
 @:jsRequire("./Content/Datas/Scripts/System/Graphic/index",
   "StatisticProgression") extern class StatisticProgression extends Base {
-  function new(player: content.datas.scripts.system.core.index.Player);
-  var player: content.datas.scripts.system.core.index.Player;
+  function new(player: Player);
+  var player: Player;
   var listStatsProgression: Array<Dynamic>;
   var listStatsNames: Array<Dynamic>;
   var listStats: Array<Dynamic>;
