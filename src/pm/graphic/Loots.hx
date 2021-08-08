@@ -8,7 +8,7 @@ package pm.graphic;
 @:js.import('../../System/Graphic/Loots.js')
 extern class Loots extends Base {
   function new(loots: Array<{}>, nb: Float);
-  var graphicsLoots: Array<Dynamic>;
+  var graphicsLoots: Array<Item>;
 
   /**
     Drawing the loots.

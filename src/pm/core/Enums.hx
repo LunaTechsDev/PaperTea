@@ -618,3 +618,80 @@ extern enum abstract StatusRestrictionsKind(Int) from Int to Int {
   var AttackRandomAlly;
   var AttackRandomEnemy;
 }
+
+/**
+  Enum for the different primitive values kind.
+**/
+extern enum abstract DynamicValueKind(Int) from Int to Int {
+  var Unknown;
+  var None;
+  var Anything;
+  var Default;
+  var Number;
+  var Variable;
+  var Parameter;
+  var Property;
+  var DataBase;
+  var Message;
+  var Script;
+  var Switch;
+  var KeyBoard;
+  var NumberDouble;
+  var Font;
+  var Class;
+  var Hero;
+  var Monster;
+  var Troop;
+  var Item;
+  var Weapon;
+  var Armor;
+  var Skill;
+  var Animation;
+  var Status;
+  var Tileset;
+  var FontSize;
+  var FontName;
+  var Color;
+  var WindowSkin;
+  var Currency;
+  var Speed;
+  var Detection;
+  var CameraProperty;
+  var Frequency;
+  var Skybox;
+  var BattleMap;
+  var Element;
+  var CommonStatistic;
+  var WeaponsKind;
+  var ArmorsKind;
+  var CommonBattleCommand;
+  var CommonEquipment;
+  var Event;
+  var State;
+  var CommonReaction;
+  var Model;
+  var CustomStructure;
+  var CustomList;
+  var Vector2;
+  var Vector3;
+  var Bars;
+  var Icons;
+  var Autotiles;
+  var Characters;
+  var Mountains;
+  var Tilesets;
+  var Walls;
+  var Battlers;
+  var Facesets;
+  var WindowSkins;
+  var TitleScreen;
+  var Object3D;
+  var Pictures;
+  var Animations;
+  var SkyBoxes;
+  var Enum;
+  var Music;
+  var BackgroundSound;
+  var Sound;
+  var MusicEffect;
+}

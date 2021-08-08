@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.Enums.DynamicValueKind;
 import pm.system.MapObject;
 import pm.core.Enums.AnimationEffectConditionKind;
 import pm.core.Enums.IncreaseDecreaseKind;
@@ -726,4 +727,20 @@ typedef WindowBoxOptions = {
   **/
   @:optional
   var selected: Bool;
+};
+
+typedef StructIterator = {
+  var i: Float;
+};
+
+typedef StructJSON = {
+  var k: DynamicValueKind;
+  var v: Dynamic;
+  var x: StructJSON;
+  var y: StructJSON;
+  var z: StructJSON;
+  @:optional
+  var customStructure: {};
+  @:optional
+  var customList: {};
 };

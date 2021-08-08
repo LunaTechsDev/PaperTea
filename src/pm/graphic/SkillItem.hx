@@ -1,5 +1,7 @@
 package pm.graphic;
 
+import pm.core.Picture2D;
+
 @:jsRequire("./Content/Datas/Scripts/System/Graphic/index", "SkillItem") extern class SkillItem extends Base {
   function new(system: Dynamic);
   var system: Dynamic;
