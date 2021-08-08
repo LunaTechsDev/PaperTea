@@ -1,10 +1,18 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index",
-  "RemoveObjectFromMap") extern class RemoveObjectFromMap extends Base {
+import pm.system.DynamicValue;
+import pm.system.MapObject;
+
+/** @class
+ *  An event command for removing a specific object from map.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('RemoveObjectFromMap')
+@:js.import('../../System/EventCommand/RemoveObjectFromMap.js')
+extern class RemoveObjectFromMap extends Base {
   function new(command: Array<Dynamic>);
-  var objectID: Dynamic;
+  var objectID: DynamicValue;
 
   /**
     Initialize the current state.

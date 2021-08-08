@@ -1,28 +1,37 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index",
-  "SetDialogBoxOptions") extern class SetDialogBoxOptions extends Base {
+import pm.system.DynamicValue;
+import pm.system.Color;
+import pm.system.WindowSkin;
+
+/** @class
+ *  An event command for setting the dialog box options.
+ *  @extends EventCommand.Base
+ *  @param {any[]} command - Direct JSON command to parse
+ */
+@:native('SetDialogBoxOptions')
+@:js.import('../../System/EventCommand/SetDialogBoxOptions.js')
+extern class SetDialogBoxOptions extends Base {
   function new(command: Array<Dynamic>);
-  var windowSkinID: Dynamic;
-  var x: Dynamic;
-  var y: Dynamic;
-  var w: Dynamic;
-  var h: Dynamic;
-  var pLeft: Dynamic;
-  var pTop: Dynamic;
-  var pRight: Dynamic;
-  var pBottom: Dynamic;
+  var windowSkinID: DynamicValue;
+  var x: DynamicValue;
+  var y: DynamicValue;
+  var w: DynamicValue;
+  var h: DynamicValue;
+  var pLeft: DynamicValue;
+  var pTop: DynamicValue;
+  var pRight: DynamicValue;
+  var pBottom: DynamicValue;
   var fPosAbove: Bool;
-  var fX: Dynamic;
-  var fY: Dynamic;
+  var fX: DynamicValue;
+  var fY: DynamicValue;
   var tOutline: Bool;
-  var tcText: Dynamic;
-  var tcOutline: Dynamic;
-  var tcBackground: Dynamic;
-  var tSize: Dynamic;
-  var tFont: Dynamic;
-  var v_windowSkin: Dynamic;
+  var tcText: DynamicValue;
+  var tcOutline: DynamicValue;
+  var tcBackground: DynamicValue;
+  var tSize: DynamicValue;
+  var tFont: DynamicValue;
+  var v_windowSkin: WindowSkin;
   var v_x: Float;
   var v_y: Float;
   var v_w: Float;
@@ -35,9 +44,9 @@ package pm.eventcommand;
   var v_fX: Float;
   var v_fY: Float;
   var v_tOutline: Bool;
-  var v_tcText: Dynamic;
-  var v_tcOutline: Dynamic;
-  var v_tcBackground: Dynamic;
+  var v_tcText: Color;
+  var v_tcOutline: Color;
+  var v_tcBackground: Color;
   var v_tSize: Float;
   var v_tFont: String;
   static var prototype: SetDialogBoxOptions;

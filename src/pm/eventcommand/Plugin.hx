@@ -1,11 +1,15 @@
 package pm.eventcommand;
 
-;
-@:jsRequire("./Content/Datas/Scripts/System/EventCommand/index", "Plugin") extern class Plugin extends Base {
+import pm.system.MapObject;
+import pm.system.DynamicValue;
+
+@:native('Plugin')
+@:js.import('../../System/EventCommand/Plugin.js')
+extern class Plugin extends Base {
   function new(command: Array<Dynamic>);
   var pluginID: Float;
   var commandID: Float;
-  var parameters: Array<Dynamic>;
+  var parameters: Array<DynamicValue>;
 
   /**
     Update and check if the event is finished.

@@ -1,5 +1,6 @@
 package pm.eventcommand;
 
+import pm.system.DynamicValue;
 import pm.system.MapObject;
 
 /** @class
@@ -11,10 +12,10 @@ import pm.system.MapObject;
 @:js.import('../../System/EventCommand/ShakeScreen.js')
 extern class ShakeScreen extends Base {
   function new(command: Array<Dynamic>);
-  var offset: Dynamic;
-  var shakeNumber: Dynamic;
+  var offset: DynamicValue;
+  var shakeNumber: DynamicValue;
   var isWaitEnd: Bool;
-  var time: Dynamic;
+  var time: DynamicValue;
 
   /**
     Initialize the current state.
