@@ -31,10 +31,10 @@ extern class Battle extends Map_ {
   function new(troopID: Float, canGameOver: Bool, canEscape: Bool, battleMap: Dynamic, transitionStart: Float,
     transitionEnd: Float, transitionStartColor: Dynamic, transitionEndColor: Dynamic);
   var battleInitialize: BattleInitialize;
-  var battleStartTurn: Dynamic;
-  var battleSelection: Dynamic;
-  var battleAnimation: Dynamic;
-  var battleEnemyAttack: Dynamic;
+  var battleStartTurn: BattleStartTurn;
+  var battleSelection: BattleSelection;
+  var battleAnimation: BattleAnimation;
+  var battleEnemyAttack: BattleEnemyAttack;
   var battleEndTurn: Dynamic;
   var battleVictory: Dynamic;
   var troop: Dynamic;
