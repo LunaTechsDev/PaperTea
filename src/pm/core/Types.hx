@@ -744,3 +744,8 @@ typedef StructJSON = {
   @:optional
   var customList: {};
 };
+
+typedef StructPositionChoice = {
+  var index: Float;
+  var offset: Float;
+};
