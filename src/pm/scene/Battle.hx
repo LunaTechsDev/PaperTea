@@ -35,8 +35,8 @@ extern class Battle extends Map_ {
   var battleSelection: BattleSelection;
   var battleAnimation: BattleAnimation;
   var battleEnemyAttack: BattleEnemyAttack;
-  var battleEndTurn: Dynamic;
-  var battleVictory: Dynamic;
+  var battleEndTurn: BattleEndTurn;
+  var battleVictory: BattleVictory;
   var troop: Dynamic;
   var canGameOver: Bool;
   var canEscape: Bool;
