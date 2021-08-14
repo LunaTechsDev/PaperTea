@@ -4,6 +4,7 @@ import pm.core.Picture2D;
 import pm.core.Enums.Align;
 
 @:native('TextIcon')
+@:js.import('../../System/Graphic/TextIcon.js')
 extern class TextIcon extends Base {
   /**
     * Constructor for Text Icons

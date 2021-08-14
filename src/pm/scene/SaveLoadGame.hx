@@ -20,7 +20,7 @@ extern class SaveLoadGame extends Base {
   /**
     Initialize a game displaying.
   **/
-  function initializeGame(game: Game): Void; // Core From Game
+  function initializeGame(game: pm.core.Game): Void; // Core From Game
 
   /**
     Set the contents in the bottom and top bars.

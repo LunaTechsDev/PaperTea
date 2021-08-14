@@ -1,24 +1,21 @@
 package pm.system;
 
-import pm.core.Types;
-import pm.core.Enums.DynamicValueKind;
-
 @:native('DynamicValue')
 @:js.import('../../System/System/DynamicValue.js')
 extern class DynamicValue {
   function new(?json: {});
-  var kind: DynamicValueKind;
+  var kind: pm.core.Enums.DynamicValueKind;
   var value: Dynamic;
-  var customStructure: {};
-  var customList: Array<Dynamic>;
-  var x: Dynamic;
-  var y: Dynamic;
-  var z: Dynamic;
+  var customStructure: {}; // Struct that uses DynamicValue
+  var customList: Array<DynamicValue>;
+  var x: DynamicValue;
+  var y: DynamicValue;
+  var z: DynamicValue;
 
   /**
     Read the JSON associated to the value
   **/
-  function read(json: StructJSON): Void;
+  function read(json: pm.core.Types.StructJSON): Void;
 
   /**
     Get the json value.
@@ -40,12 +37,12 @@ extern class DynamicValue {
   /**
     Create a new value from kind and value.
   **/
-  static function create(?k: DynamicValueKind, ?v: Dynamic): Dynamic;
+  static function create(?k: pm.core.Enums.DynamicValueKind, ?v: Dynamic): Dynamic;
 
   /**
     Create a new value from a command and iterator.
   **/
-  static function createValueCommand(command: Array<Dynamic>, iterator: StructIterator): Dynamic;
+  static function createValueCommand(command: Array<Dynamic>, iterator: pm.core.Types.StructIterator): Dynamic;
 
   /**
     Create a none value.
@@ -101,40 +98,40 @@ extern class DynamicValue {
   /**
     Try to read a variable value, if not possible put default value.
   **/
-  static function readOrDefaultVariable(json: StructJSON): DynamicValue;
+  static function readOrDefaultVariable(json: pm.core.Types.StructJSON): DynamicValue;
 
   /**
     Try to read a number value, if not possible put default value.
   **/
-  static function readOrDefaultNumber(json: StructJSON, ?n: Float): DynamicValue;
+  static function readOrDefaultNumber(json: pm.core.Types.StructJSON, ?n: Float): DynamicValue;
 
   /**
     Try to read a double number value, if not possible put default value.
   **/
-  static function readOrDefaultNumberDouble(json: StructJSON, ?n: Float): DynamicValue;
+  static function readOrDefaultNumberDouble(json: pm.core.Types.StructJSON, ?n: Float): DynamicValue;
 
   /**
     Try to read a database value, if not possible put default value.
   **/
-  static function readOrDefaultDatabase(json: StructJSON, ?id: Float): DynamicValue;
+  static function readOrDefaultDatabase(json: pm.core.Types.StructJSON, ?id: Float): DynamicValue;
 
   /**
     Try to read a message value, if not possible put default value.
   **/
-  static function readOrDefaultMessage(json: StructJSON, ?m: String): DynamicValue;
+  static function readOrDefaultMessage(json: pm.core.Types.StructJSON, ?m: String): DynamicValue;
 
   /**
     Try to read a switch value, if not possible put default value.
   **/
-  static function readOrDefaultSwitch(json: StructJSON, ?s: Bool): DynamicValue;
+  static function readOrDefaultSwitch(json: pm.core.Types.StructJSON, ?s: Bool): DynamicValue;
 
   /**
     Try to read a value, if not possible put none value.
   **/
-  static function readOrNone(json: StructJSON): DynamicValue;
+  static function readOrNone(json: pm.core.Types.StructJSON): DynamicValue;
 
   /**
     Read a value of any kind and return it.
   **/
-  static function readFromJSON(json: StructJSON): DynamicValue;
+  static function readFromJSON(json: pm.core.Types.StructJSON): DynamicValue;
 }
