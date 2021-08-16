@@ -6,11 +6,7 @@ import pm.system.DynamicValue;
 @:forwardStatics
 abstract DyV(DynamicValue) {
   public inline function new(?d: DynamicValue) {
-    if (d == null) {
-      this = DynamicValue.createNone();
-    } else {
-      this = d;
-    }
+    this = d == null ? DynamicValue.createNone() : d;
   }
 
   public inline static function createNum(num: Float) {

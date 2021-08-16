@@ -7,6 +7,7 @@ package pm.system;
  *  common reaction
  */
 @:native('CommonReaction')
+@:js.import('../../System/System/CommonReaction.js')
 extern class CommonReaction extends Reaction {
   function new(?json: {});
   var parameters: Array<Parameter>;
