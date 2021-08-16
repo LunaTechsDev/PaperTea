@@ -1,5 +1,10 @@
 package pm.datas;
 
+/**
+ * @class
+ * All the settings data
+ * @static
+ */
 @:native('Settings')
 @:js.import('../../System/Datas/Settings.js')
 extern class Settings {
