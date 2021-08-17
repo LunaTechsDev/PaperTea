@@ -1,5 +1,9 @@
 package pm.datas;
 
+/** @class
+ *  All the status datas.
+ *  @static
+ */
 @:native('Status')
 @:js.import('../../System/Datas/Status.js')
 extern class Status {
