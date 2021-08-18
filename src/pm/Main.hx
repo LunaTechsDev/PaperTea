@@ -1,13 +1,12 @@
-package pm.system;
+package pm;
 
 /** @class
  *  The main class which sets up data and begins the main game loop.
  */
-@:native('Main') ;
-@:js.import('../../System/Main.js') ;
+@:js.import('../../Main.js')
 extern class Main {
-  public static loaded: Bool;
-  function new();
+  public static var loaded: Bool;
+  public function new(): Void;
   public static function initialize(): Void;
   public static function load(): Void;
   public static function onEndLoading(): Void;
