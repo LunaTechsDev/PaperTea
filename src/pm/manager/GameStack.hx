@@ -26,7 +26,7 @@ extern class GameStack {
   public static var loadingDelay: Float;
   public static var elapsedTime: Float;
   public static var averageElapsedTime: Float;
-  public static var lastUpdateTime: Int;
+  public static var lastUpdateTime: Float;
   public static var displayedPictures: Array<Tuple2<Float, Picture2D>>;
   public static var isInMainMenu: Bool;
 
