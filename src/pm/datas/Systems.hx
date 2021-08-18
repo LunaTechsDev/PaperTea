@@ -21,7 +21,7 @@ import js.lib.Promise;
  *   @static
  */
 @:native('Systems')
-@:js.import('../../Datas/Systems.js')
+@:js.import('../../System/Datas/Systems.js')
 extern class Systems {
   static var SQUARE_SIZE: Float;
   static var PORTIONS_RAY_NEAR: Float;
