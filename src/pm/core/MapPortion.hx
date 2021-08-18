@@ -1,5 +1,6 @@
 package pm.core;
 
+import pm.core.AutoTiles;
 import pm.system.MapObject;
 import pm.core.Types.StructMapElementCollision;
 import pm.core.Enums.ElementMapKind;
