@@ -1,9 +1,18 @@
 package pm.scene;
 
+import pm.core.Player;
 import pm.core.MapPortion;
 import pm.core.TextureBundle;
+import pm.core.Vector2;
 import pm.core.Vector3;
 import pm.core.Frame;
+import pm.core.Battler;
+import pm.core.Portion;
+import pm.core.Position;
+import pm.core.Enums.PictureKind;
+import pm.core.Enums.TargetKind;
+import pm.core.Enums.Orientation;
+import pm.core.Enums.EffectSpecialActionKind;
 import js.three.ShaderMaterial;
 
 /** @class
