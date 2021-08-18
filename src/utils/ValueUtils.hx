@@ -25,6 +25,22 @@ abstract DyV(DynamicValue) {
     return new DyV(DynamicValue.createKeyBoard(cast key));
   }
 
+  public inline static function createProp(id: Float) {
+    return new DyV(DynamicValue.createProperty(id));
+  }
+
+  public inline static function createParam(id: Float) {
+    return new DyV(DynamicValue.createParameter(id));
+  }
+
+  public inline static function createVar(id: Float) {
+    return new DyV(DynamicValue.createVariable(id));
+  }
+
+  public inline static function createSwtch(switchValue: Bool) {
+    return new DyV(DynamicValue.createSwitch(switchValue));
+  }
+
   @:op(~A) public inline function getVal<T>(): T {
     return this.getValue();
   }

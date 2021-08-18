@@ -10,6 +10,7 @@
 
 # JS Version
 -D js-es=6
+-D js-classic
 
 # Static Code Analysis For Removing  Unnecessary Code
 -D analyzer-optimize
