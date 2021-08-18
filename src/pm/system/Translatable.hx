@@ -1,5 +1,6 @@
 package pm.system;
 
+import pm.core.Types.StructIterator;
 import haxe.DynamicAccess;
 
 @:native('Translatable')

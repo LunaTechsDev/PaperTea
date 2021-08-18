@@ -1,5 +1,7 @@
 package pm.system;
 
+import pm.core.Item;
+
 /** @class
  *  An inventory filter used to filter inventory or shops items.
  *  @extends Translatable
@@ -9,7 +11,7 @@ package pm.system;
 @:js.import('../../System/System/InventoryFilter.js')
 extern class InventoryFilter extends Translatable {
   function new(?json: {});
-  var kind: InventoryFilterKind;
+  var kind: InventoryFilter;
   var itemTypeID: Dynamic;
   var script: String;
 
