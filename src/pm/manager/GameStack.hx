@@ -1,6 +1,6 @@
 package pm.manager;
 
-import ts.AnyOf3;
+import ts.Tuple2;
 import pm.core.Picture2D;
 import pm.scene.SceneTitleScreen;
 import pm.scene.SceneGame;
@@ -27,7 +27,7 @@ extern class GameStack {
   public static var elapsedTime: Float;
   public static var averageElapsedTime: Float;
   public static var lastUpdateTime: Int;
-  public static var displayedPictures: Array<AnyOf3<Int, Float, Picture2D>>;
+  public static var displayedPictures: Array<Tuple2<Float, Picture2D>>;
   public static var isInMainMenu: Bool;
 
   public function new(): Void;
