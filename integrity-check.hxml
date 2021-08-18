@@ -5,6 +5,7 @@
 --macro include("core")
 --macro include("macros")
 --macro include("utils")
+--macro include("pm")
 --no-output
 
 --each

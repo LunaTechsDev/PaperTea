@@ -1,6 +1,6 @@
 # PaperTea 
 
-### Version 0.0.1
+### Version 0.8.1-Alpha
 
 > LunaTechs Haxe Framework & Definitions for RPG Paper Maker Open Source - Haxe Framework for creating RPG Paper Maker plugins and games.
 
@@ -11,6 +11,8 @@ Officially supported by RPG Paper Maker.
 
 ### Authors & Contributors
 * Kino Rose
+* inc0der
+* Wano
 
 
 ## Why Haxe ?
