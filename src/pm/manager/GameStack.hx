@@ -3,24 +3,24 @@ package pm.manager;
 import ts.Tuple2;
 import pm.core.Picture2D;
 import pm.scene.SceneTitleScreen;
-import pm.scene.SceneGame;
+import pm.scene.Base as SceneBase;
 import pm.scene.Loading;
 
 /** @class
  *   The game stack that is organizing the game scenes
- *   @property {SceneGame[]} content The stack content
- *   @property {SceneGame[]} top The stack top content
- *   @property {SceneGame[]} subTop The stack top - 1 content
- *   @property {SceneGame[]} bot The stack bot content
+ *   @property {SceneBase[]} content The stack content
+ *   @property {SceneBase[]} top The stack top content
+ *   @property {SceneBase[]} subTop The stack top - 1 content
+ *   @property {SceneBase[]} bot The stack bot content
  */
 @:native('Stack')
 @:js.import('../../System/Manager/Stack.js')
 // TODO: Check for any missing data
 extern class GameStack {
-  public static var content: Array<SceneGame>;
-  public static var top: Array<SceneGame>;
-  public static var subTop: Array<SceneGame>;
-  public static var bot: Array<SceneGame>;
+  public static var content: Array<SceneBase>;
+  public static var top: Array<SceneBase>;
+  public static var subTop: Array<SceneBase>;
+  public static var bot: Array<SceneBase>;
   public static var requestPaintHUD: Bool;
   public static var sceneLoading: Loading;
   public static var loadingDelay: Float;
@@ -34,36 +34,36 @@ extern class GameStack {
 
   /** 
    * Push a new scene in the stack
-   *   @param {SceneGame} scene The scene to push
+   *   @param {SceneBase} scene The scene to push
    */
-  public static function push(scene: SceneGame): Void;
+  public static function push(scene: SceneBase): Void;
 
   /** 
    * Pop (remove) the last scene in the stack
-   *   @returns {SceneGame} The last scene that is removed
+   *   @returns {SceneBase} The last scene that is removed
    */
-  public static function pop(): SceneGame;
+  public static function pop(): SceneBase;
 
   /**
    * Pop(remove) all the scenes in the stacks.
-   * @return SceneGame
+   * @return SceneBase
    */
-  public static function popAll(): SceneGame;
+  public static function popAll(): SceneBase;
 
   /** 
    * Replace the last scene in the stack by a new scene
-   *   @param {SceneGame} scene The scene to replace
-   *   @returns {SceneGame} The last scene that is replaced
+   *   @param {SceneBase} scene The scene to replace
+   *   @returns {SceneBase} The last scene that is replaced
    */
-  public static function replace(scene: SceneGame): SceneGame;
+  public static function replace(scene: SceneBase): SceneBase;
 
   /** 
    * Get the scene at a specific index in the stack. 0 is the bottom of the
    *   stack
    *   @param {number} i Index in the stack
-   *   @returns {SceneGame} The scene in the index of the stack
+   *   @returns {SceneBase} The scene in the index of the stack
    */
-  public static function at(i: Int): SceneGame;
+  public static function at(i: Int): SceneBase;
 
   /** Check if the stack is empty
    *   @returns {boolean}
