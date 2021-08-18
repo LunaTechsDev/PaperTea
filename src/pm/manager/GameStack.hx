@@ -1,6 +1,10 @@
 package pm.manager;
+
+import ts.AnyOf3;
+import pm.core.Picture2D;
 import pm.scene.SceneTitleScreen;
 import pm.scene.SceneGame;
+import pm.scene.Loading;
 
 /** @class
  *   The game stack that is organizing the game scenes
@@ -17,6 +21,14 @@ extern class GameStack {
   public static var top: Array<SceneGame>;
   public static var subTop: Array<SceneGame>;
   public static var bot: Array<SceneGame>;
+  public static var requestPaintHUD: Bool;
+  public static var sceneLoading: Loading;
+  public static var loadingDelay: Float;
+  public static var elapsedTime: Float;
+  public static var averageElapsedTime: Float;
+  public static var lastUpdateTime: Int;
+  public static var displayedPictures: Array<AnyOf3<Int, Float, Picture2D>>;
+  public static var isInMainMenu: Bool;
 
   public function new(): Void;
 
