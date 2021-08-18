@@ -1,5 +1,4 @@
 package pm.manager;
-
 import pm.scene.SceneTitleScreen;
 import pm.scene.SceneGame;
 
@@ -14,10 +13,10 @@ import pm.scene.SceneGame;
 @:js.import('../../System/Manager/Stack.js')
 // TODO: Check for any missing data
 extern class GameStack {
-  public var content: Array<SceneGame>;
-  public var top: Array<SceneGame>;
-  public var subTop: Array<SceneGame>;
-  public var bot: Array<SceneGame>;
+  public static var content: Array<SceneGame>;
+  public static var top: Array<SceneGame>;
+  public static var subTop: Array<SceneGame>;
+  public static var bot: Array<SceneGame>;
 
   public function new(): Void;
 
@@ -25,26 +24,26 @@ extern class GameStack {
    * Push a new scene in the stack
    *   @param {SceneGame} scene The scene to push
    */
-  public function push(scene: SceneGame): Void;
+  public static function push(scene: SceneGame): Void;
 
   /** 
    * Pop (remove) the last scene in the stack
    *   @returns {SceneGame} The last scene that is removed
    */
-  public function pop(): SceneGame;
+  public static function pop(): SceneGame;
 
   /**
    * Pop(remove) all the scenes in the stacks.
    * @return SceneGame
    */
-  public function popAll(): SceneGame;
+  public static function popAll(): SceneGame;
 
   /** 
    * Replace the last scene in the stack by a new scene
    *   @param {SceneGame} scene The scene to replace
    *   @returns {SceneGame} The last scene that is replaced
    */
-  public function replace(scene: SceneGame): SceneGame;
+  public static function replace(scene: SceneGame): SceneGame;
 
   /** 
    * Get the scene at a specific index in the stack. 0 is the bottom of the
@@ -52,48 +51,48 @@ extern class GameStack {
    *   @param {number} i Index in the stack
    *   @returns {SceneGame} The scene in the index of the stack
    */
-  public function at(i: Int): SceneGame;
+  public static function at(i: Int): SceneGame;
 
   /** Check if the stack is empty
    *   @returns {boolean}
    */
-  public function isEmpty(): Bool;
+  public static function isEmpty(): Bool;
 
   /** 
    * Check if top content is loading
    *   @returns {boolean}
    */
-  public function isLoading(): Bool;
+  public static function isLoading(): Bool;
 
   /** 
    * Push the title screen when empty
    *   @returns {SceneTitleScreen}
    */
-  public function pushTitleScreen(): SceneTitleScreen;
+  public static function pushTitleScreen(): SceneTitleScreen;
 
   /** 
    * Update the stack
    */
-  public function update(): Void;
+  public static function update(): Void;
 
   /** 
    * First key press handle for the current stack
    *   @param {number} key The key ID pressed
    */
-  public function onKeyPressed(key: Int): Void;
+  public static function onKeyPressed(key: Int): Void;
 
   /** 
    * First key release handle for the current stack
    *   @param {number} key The key ID released
    */
-  public function onKeyReleased(key: Int): Void;
+  public static function onKeyReleased(key: Int): Void;
 
   /** 
    * Key pressed repeat handle for the current stack
    *   @param {number} key The key ID pressed
    *   @returns {boolean} false if the other keys are blocked after it
    */
-  public function onKeyPressedRepeat(key: Int): Bool;
+  public static function onKeyPressedRepeat(key: Int): Bool;
 
   /** 
    * Key pressed repeat handle for the current stack, but with
@@ -101,15 +100,15 @@ extern class GameStack {
    *   @param {number} key The key ID pressed
    *   @returns {boolean} false if the other keys are blocked after it
    */
-  public function onKeyPressedAndRepeat(key: Int): Bool;
+  public static function onKeyPressedAndRepeat(key: Int): Bool;
 
   /**
    * Draws 3D scene
    */
-  public function draw3D(): Void;
+  public static function draw3D(): Void;
 
   /**
    * Draw HUD scene
    */
-  public function drawHUD(): Void;
+  public static function drawHUD(): Void;
 }
