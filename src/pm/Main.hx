@@ -4,6 +4,7 @@ package pm;
  *  The main class which sets up data and begins the main game loop.
  */
 @:js.import('../../System/main.js')
+@:native("Main")
 extern class Main {
   public static var loaded: Bool;
   public function new(): Void;
