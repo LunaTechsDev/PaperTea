@@ -708,3 +708,11 @@ extern enum abstract InventoryFilterKind(Int) from Int to Int {
   var WeaponsAndAmors;
   var Script;
 }
+
+/**
+  Enum for the screen transition.
+**/
+extern enum abstract FadeType(Int) from Int to Int {
+  var FadeIn;
+  var FadeOut;
+}
