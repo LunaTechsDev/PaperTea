@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["RPGPaperMaker", "PaperMaker", "RPGMaker", "GameDev"],
   "description": "A library for creating plugins and games for RPG Paper Maker.",
-  "version": "0.8.0-alpha",
+  "version": "0.9.1-beta",
   "classPath": "src/",
   "releasenote": "Initial release, for  RPG Paper Maker framework.",
   "contributors": ["Kino"],
