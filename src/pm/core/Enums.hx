@@ -695,3 +695,24 @@ extern enum abstract DynamicValueKind(Int) from Int to Int {
   var Sound;
   var MusicEffect;
 }
+
+/**
+  Enum for the inventory filter kind.
+**/
+extern enum abstract InventoryFilterKind(Int) from Int to Int {
+  var All;
+  var Consumables;
+  var Custom;
+  var Weapons;
+  var Armors;
+  var WeaponsAndAmors;
+  var Script;
+}
+
+/**
+  Enum for the screen transition.
+**/
+extern enum abstract FadeType(Int) from Int to Int {
+  var FadeIn;
+  var FadeOut;
+}

@@ -1,5 +1,6 @@
 package pm.system;
 
+import pm.core.Enums.InventoryFilterKind;
 import pm.core.Item;
 
 /** @class
@@ -11,7 +12,7 @@ import pm.core.Item;
 @:js.import('../../System/System/InventoryFilter.js')
 extern class InventoryFilter extends Translatable {
   function new(?json: {});
-  var kind: InventoryFilter;
+  var kind: InventoryFilterKind;
   var itemTypeID: Dynamic;
   var script: String;
 
