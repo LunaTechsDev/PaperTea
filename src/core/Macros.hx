@@ -50,9 +50,7 @@ class Macros {
       var pluginDir = '${Macros.pluginDir}/${pluginName}/';
       var distDir = '${Sys.getCwd()}/dist/';
       if (CI_ENV) {
-        trace('Running LunaNapkin in CI enviroment')
         Sys.command('npx napkin --path=${distDir}');
-        trace('Running LunaNapkin in CI enviroment')
       } else {
         Sys.command('npx napkin --path=${pluginDir}');
         Sys.command('npx napkin --path=${distDir}');
