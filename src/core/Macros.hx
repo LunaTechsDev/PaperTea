@@ -6,10 +6,10 @@ import sys.FileSystem;
 import haxe.macro.Context;
 import haxe.macro.Compiler;
 import haxe.Json;
-#end
 
 class Macros {
-  #if macro
+  public static var isDist: String = Context.definedValue('dist');
+
   static var pluginDir = '${Sys.getCwd()}/game/resources/app/Content/Datas/Scripts/Plugins';
   static var CI_ENV: Bool = Sys.getEnv('CI') != null;
 
@@ -25,16 +25,16 @@ class Macros {
 
   public static function copyDetails() {
     var pluginName = getPluginName();
-    if (pluginName != null) {
+    if (pluginName != null && isDist == null) {
       if (FileSystem.exists(pluginDir)) {
-        File.copy('${pluginDir}/${pluginName}/details.json', '${Sys.getCwd()}/details.json');
+        var filepath = '${pluginDir}/${pluginName}/details.json';
+        File.copy(filepath, '${Sys.getCwd()}/details.json');
         Sys.command('npx prettier ./details.json --write');
       }
     }
   }
 
   public static function setOutput() {
-    var isDist = Context.definedValue('dist');
     var pluginName = getPluginName();
     if (isDist != null) {
       Compiler.setOutput('${Sys.getCwd()}/dist/code.js');
@@ -57,5 +57,5 @@ class Macros {
       }
     });
   }
-  #end
 }
+#end
