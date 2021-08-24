@@ -99,8 +99,8 @@ class BuildMacros {
 
     for (local in fields.keyValueIterator()) {
       if (local.value.kind.getName() == 'FVar') {
-        var isPrivate: Bool = local.value.access.contains(Access.APublic);
-        var isPublic: Bool = local.value.access.length <= 0 && !isPrivate;
+        var isPrivate = local.value.access.contains(Access.APublic);
+        var isPublic = local.value.access.length <= 0 && !isPrivate;
         var isRequired = local.value.meta.exists(i -> i.name == 'required');
         var name = local.value.name;
         var type = Types.toComplex(local.value.kind.getParameters()[0]);
