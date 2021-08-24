@@ -1,11 +1,12 @@
 package macros;
 
+import haxe.macro.Expr.Access;
 import sys.io.File;
 import haxe.macro.Expr.Field;
 import haxe.macro.Context;
-import haxe.macro.Expr;
-import haxe.macro.Type;
 import sys.FileSystem;
+import tink.macro.ClassBuilder;
+import tink.macro.Types;
 
 using Lambda;
 using core.StringExtensions;
@@ -89,5 +90,26 @@ class BuildMacros {
       traverseFiles(traverseFiles, path, file);
     });
     return fields;
+  }
+
+  macro public static function structInitDefaults(): Array<Field> {
+    var builder = new ClassBuilder();
+    var constructor = builder.getConstructor();
+    var fields = builder.export();
+
+    for (local in fields.keyValueIterator()) {
+      if (local.value.kind.getName() == 'FVar') {
+        var isPrivate = local.value.access.contains(Access.APublic);
+        var isPublic = local.value.access.length <= 0 && !isPrivate;
+        var isRequired = local.value.meta.exists(i -> i.name == 'required');
+        var name = local.value.name;
+        var type = Types.toComplex(local.value.kind.getParameters()[0]);
+        if (isPublic) {
+          constructor.addArg(name, type, null, !isRequired);
+        }
+      }
+    }
+
+    return builder.export();
   }
 }

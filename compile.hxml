@@ -4,7 +4,8 @@
 -lib toy-box
 -lib electron
 -lib jsImport
-
+-lib tink_core
+-lib tink_macro
 # Code Directory
 -cp src
 
