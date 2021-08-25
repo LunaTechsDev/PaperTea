@@ -27,14 +27,16 @@ class Macros {
     var pluginName = getPluginName();
     if (pluginName != null) {
       if (FileSystem.exists(pluginDir)) {
-        var distFilepath = '${Sys.getCwd()}details.json';
-        var filepath = '${pluginDir}/${pluginName}/details.json';
+        var rootDetailsPath = '${Sys.getCwd()}details.json';
+        var pluginsDetailsPath = '${pluginDir}/${pluginName}/details.json';
+
         if (CI_ENV) {
-          File.copy(distFilepath, '${Compiler.getOutput()}details.json');
+          File.copy(rootDetailsPath, '${Compiler.getOutput()}details.json');
+          return
         }
-        File.copy(filepath, distFilepath);
+        File.copy(pluginsDetailsPath, rootDetailsPath);
         Sys.command('npx prettier ./details.json --write');
-        File.copy(filepath, '${Compiler.getOutput()}details.json');
+        File.copy(rootDetailsPath, '${Compiler.getOutput()}details.json');
         Compiler.setOutput('${Compiler.getOutput()}code.js');
       }
     }
