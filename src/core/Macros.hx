@@ -14,7 +14,7 @@ class Macros {
   static var CI_ENV: Bool = Sys.getEnv('CI') != null;
 
   public static function getPluginName() {
-    var data = File.getContent('${Sys.getCwd()}/details.json');
+    var data = File.getContent('${Sys.getCwd()}details.json');
     var details = Json.parse(data);
     if (details.name != null) {
       return details.name;
@@ -25,35 +25,26 @@ class Macros {
 
   public static function copyDetails() {
     var pluginName = getPluginName();
-    if (pluginName != null && isDist == null) {
+    if (pluginName != null) {
       if (FileSystem.exists(pluginDir)) {
+        var distFilepath = '${Sys.getCwd()}details.json';
         var filepath = '${pluginDir}/${pluginName}/details.json';
-        File.copy(filepath, '${Sys.getCwd()}/details.json');
+        File.copy(filepath, distFilepath);
         Sys.command('npx prettier ./details.json --write');
+        File.copy(filepath, '${Compiler.getOutput()}details.json');
+        Compiler.setOutput('${Compiler.getOutput()}code.js');
       }
-    }
-  }
-
-  public static function setOutput() {
-    var pluginName = getPluginName();
-    if (isDist != null) {
-      Compiler.setOutput('${Sys.getCwd()}/dist/code.js');
-      File.copy('${Sys.getCwd()}/details.json', '${Sys.getCwd()}/dist/details.json');
-    } else if (!CI_ENV) {
-      Compiler.setOutput('${Macros.pluginDir}/${pluginName}/code.js');
     }
   }
 
   public static function runNapkin() {
     Context.onAfterGenerate(() -> {
       var pluginName = getPluginName();
-      var pluginDir = '${Macros.pluginDir}/${pluginName}/';
+      var pluginDir = '${pluginDir}/${pluginName}/';
       var distDir = '${Sys.getCwd()}/dist/';
-      if (CI_ENV) {
-        Sys.command('npx napkin --path=${distDir}');
-      } else {
-        Sys.command('npx napkin --path=${pluginDir}');
-        Sys.command('npx napkin --path=${distDir}');
+      Sys.command('npx', ['napkin', '--path=${distDir}', '--name=${pluginName}']);
+      if (!CI_ENV) {
+        File.copy('${distDir}/code.js', '${pluginDir}/code.js');
       }
     });
   }
