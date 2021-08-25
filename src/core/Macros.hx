@@ -32,11 +32,11 @@ class Macros {
 
         if (CI_ENV) {
           File.copy(rootDetailsPath, '${Compiler.getOutput()}details.json');
-          return;
+        } else {
+          File.copy(pluginsDetailsPath, rootDetailsPath);
+          Sys.command('npx', ['prettier', './details.json', '--write']);
+          File.copy(rootDetailsPath, '${Compiler.getOutput()}details.json');
         }
-        File.copy(pluginsDetailsPath, rootDetailsPath);
-        Sys.command('npx', ['prettier', './details.json', '--write']);
-        File.copy(rootDetailsPath, '${Compiler.getOutput()}details.json');
         Compiler.setOutput('${Compiler.getOutput()}code.js');
       }
     }
