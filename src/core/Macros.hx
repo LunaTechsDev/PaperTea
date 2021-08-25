@@ -29,6 +29,9 @@ class Macros {
       if (FileSystem.exists(pluginDir)) {
         var distFilepath = '${Sys.getCwd()}details.json';
         var filepath = '${pluginDir}/${pluginName}/details.json';
+        if (CI_ENV) {
+          File.copy(distFilepath, '${Compiler.getOutput()}details.json');
+        }
         File.copy(filepath, distFilepath);
         Sys.command('npx prettier ./details.json --write');
         File.copy(filepath, '${Compiler.getOutput()}details.json');
